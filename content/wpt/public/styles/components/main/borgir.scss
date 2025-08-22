@@ -1,0 +1,14 @@
+.borgir-menu {
+    position:relative;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    .borgir-bread {
+        border-radius: 50px;
+        width: 35px;
+        height: 5px;
+        background-color: var(--app-main-hue);
+    }
+}

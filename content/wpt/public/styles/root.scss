@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.light:root {
+
+    --app-main-hue : #1759A6;
+    --app-main-hue-on-hover : hsl(212, 76%, 30%);
+
+    --app-second-hue : #A61749;
+    --app-third-hue: mix(var(--app-main-hue), var(--app-second-hue), 50%);
+
+    --app-background-color: rgb(241, 241, 241);
+    --app-background-color-transparent : rgba(230, 230, 230,0.5);
+    --app-background-color-secondary: rgb(235, 235, 235);
+    --app-background-color-tertiary: hsl(0, 2%, 89%);
+    --app-background-color-quaternary: hsl(0, 0%, 75%);
+    --app-background-idle-color: rgba(0,0,0,0.5);
+
+    --app-main-border-radius: 50px;
+    --app-second-border-radius: 20px;
+    --app-tertiary-border-radius: 10px;
+
+    --app-text-color : rgb(51, 51, 51);
+    --app-text-color-light : rgba(51, 51, 51,0.8);
+    --app-font-family: 'Nunito', sans-serif;
+
+    --app-main-components-transition: 0.3s ease-in-out;
+}
+
+
+.dark:root {
+    --app-main-hue : hwb(212 9% 25%);
+    --app-main-hue-on-hover : hwb(212 9% 50%);
+    
+    --app-second-hue : #172aa6;
+    --app-third-hue: mix(var(--app-main-hue), var(--app-second-hue), 50%);
+
+    --app-background-color: rgb(10, 10, 10);
+    --app-background-color-transparent : rgba(22, 22, 22, 0.5);
+    --app-background-color-secondary: rgb(17, 17, 17);
+    --app-background-color-tertiary: hsl(0, 0%, 9%);
+    --app-background-color-quaternary: hsl(0, 0%, 20%);
+    --app-background-idle-color: rgba(0,0,0,0.5);
+
+    --app-main-border-radius: 50px;
+    --app-second-border-radius: 20px;
+    --app-tertiary-border-radius: 10px;
+
+    --app-text-color : rgb(241, 241, 241);
+    --app-text-color-light : rgba(241, 241, 241,0.8);
+    --app-font-family: 'Nunito', sans-serif;
+
+    --app-main-components-transition: 0.3s ease-in-out;
+}
+
+body {
+    background-color: var(--app-background-color);
+    overflow : hidden;
+    min-width: 100vh;
+    min-height: 100vh;
+    * {
+        transition: var(--app-main-components-transition);
+        font-family: var(--app-font-family);
+        -webkit-tap-highlight-color: transparent;
+
+
+    }
+    margin:0;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    a {
+        color:var(--app-text-color);
+    }
+    a:hover {
+        color:var(--app-text-color-light)
+    }
+}
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--app-background-color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--app-main-hue);
+    border-radius: var(--app-main-border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--app-main-hue-on-hover);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+}

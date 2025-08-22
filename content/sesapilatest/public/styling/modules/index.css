@@ -1,0 +1,121 @@
+/* New container button */
+.fixed-app-button {
+    position:fixed;
+    right: 5vh;
+    bottom: 5vh;
+}
+.fixed-app-button .button-icon svg {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+
+/* Loader */
+
+.loader-container {
+    padding: 50px;
+    position:absolute;
+    width: fit-content;
+    height: fit-content;
+    top:0;left:0;right:0;bottom:0;margin: auto;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid var(--app-main-theme-text-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1.5s linear infinite;
+  } 
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: var(--app-main-theme-tone);
+    
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+/* PopUp styling */
+.popup-container-dnd {
+    opacity: 0;
+    display: none;
+}
+
+.popup-container-dnd.active {
+    backdrop-filter: blur(1px); /* Adjust the blur value as needed */
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.popup {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--app-main-theme-background-darker);
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+    min-height: 20vh;
+    width: calc(100% - 150px);
+    max-width: 80vh;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.popup .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup .informations .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.popup .informations .description {
+  font-size: 18px;
+  line-height: 28px;
+}
+.popup .buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.popup * input:hover, .popup * textarea:hover, .popup * input:focus,  .popup * textarea:focus {
+  background-color: var(--app-main-theme-background-darker-2);
+}

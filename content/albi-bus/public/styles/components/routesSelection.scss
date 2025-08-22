@@ -1,0 +1,28 @@
+.routes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    .route {
+        width: fit-content;
+        padding: 10px 20px 10px 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 50px;
+        align-items: center;
+        cursor: pointer;
+        .route-short-name {
+            font-weight: bold;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+    }
+}

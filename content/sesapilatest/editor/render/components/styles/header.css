@@ -1,0 +1,26 @@
+.render-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.render-header .main {
+    display: flex;
+    flex-direction: column;
+}
+.render-header .main .informations {
+    font-size: 13px;
+    color:var(--app-main-theme-text-color-transparent-2)
+}
+
+.render-header .main .identity {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.render-header .main .identity .title {
+    font-size: 30px;
+}
+.render-header .main .identity .description {
+    font-size: 20px;
+}

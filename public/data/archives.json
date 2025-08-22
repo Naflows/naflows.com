@@ -1,0 +1,106 @@
+[
+    {
+        "id" : 1,
+        "name" : "Albus & Algus",
+        "description" : "A functional algorithm for the Grand Albigeois bus network.",
+        "logo" : "/content/albi-bus/frames/algus.png",
+        "url" : "/content/albi-bus/index.html",
+        "hue" : "#E61169",
+        "svg" :"/public/logo/albus.svg",
+        "date" : "2023",
+        "status": "discontinued"
+    },
+    {
+        "id" : 2,
+        "name" : "Wripiltra (WPT)",
+        "description" : "A web-based platform for writing and publishing articles.",
+        "logo" : "/content/wpt/public/resources/Logo.png",
+        "url" : "/content/wpt/index.html",
+        "hue" : "#1759A6",
+        "svg" : "/public/logo/wpt.svg",
+        "date" : "2024",
+        "status": "discontinued"
+
+    },
+    {
+        "id" : 3,
+        "name" : "SesAPI",
+        "description" : "A website to create and edit articles of any type.",
+        "logo" : "/content/sesapilatest/public/logo/logo.png",
+        "url" : "/content/sesapilatest/index.html",
+        "hue":  "#6D78F3",
+        "svg" : "/public/logo/sesapi.svg",
+        "date" : "2024",
+        "status": "discontinued"
+    },
+    {
+        "id" : 4,
+        "name" : "Sesame",
+        "description" : "A search engine for gathered data of the Starblast game.",
+        "logo" : "/content/github.io/sesame/webutils/img/logo.png",
+        "url" : "/content/github.io/sesame/index.html",
+        "hue" : "#B82828",
+        "svg" : "/public/logo/sesame.svg",
+        "date" : "2022",
+        "contributors" : ["Rithy"],
+        "status": "discontinued"
+    },
+    {
+        "id" : 7,
+        "name" : "Sesamod",
+        "description" : "An admin console for Sesame data management.",
+        "logo" : "/content/github.io/admin/styles/webutils/sesamod.png",
+        "url" : "/content/github.io/admin/index.html",
+        "hue" : "#B82828",
+        "svg" : "/public/logo/sesamod.svg",
+        "date" : "2022",
+        "contributors" : ["Rithy"],
+        "status": "discontinued"
+    },
+    {
+        "id" : 5,
+        "name" : "Linkel",
+        "description" : "Related to Sesame - uniformizing data to Sesame standards.",
+        "logo" : "/content/github.io/sesame/webutils/img/linkel_logo.png",
+        "url" : "/content/github.io/sesame/linkel/index.html",
+        "hue" : "#B82828",
+        "svg" : "/public/logo/linkel.svg",
+        "date" : "2022",
+        "status": "discontinued"
+    },
+    {
+        "id" : 6,
+        "name" : "Starblast Arena",
+        "description": "A Starblast.io teamfights mod.",
+        "logo" : "/content/github.io/arena/medias/logo.png",
+        "url" : "/content/github.io/arena/index.html",
+        "hue" : "#35AB36",
+        "svg" : "/public/logo/arena.svg",
+        "date" : "2021",
+        "contributors" : ["Starblast community"," 123 Notus"],
+        "status": "discontinued"
+    },
+    {
+        "id": 8,
+        "name": "Sprint+",
+        "description" : "An early version of Wripiltra.",
+        "logo" : "/content/sprintplus/public/resources/Logo.png",
+        "url" : "/content/sprintplus/index.html",
+        "hue" : "#1759A6",
+        "svg" : "/public/logo/sprintplus.svg",
+        "date" : "2023",
+        "status": "discontinued"
+    },
+    {
+        "id" : 9,
+        "name" : "Naflows Authentication Secure System",
+        "description" : "Backend structure of the NAFLOWS business, designed for security, scalability, and performance.",
+        "logo" : "https://github.com/Naflows/naflows-auth/blob/main/assets/NAFLOWS_LOGO.png?raw=true",
+        "url" : "https://github.com/Naflows/naflows-auth",
+        "hue" : "#E61169",
+        "svg" : "/public/logo/naflows.svg",
+        "date" : "2025",
+        "status": "active"
+    }
+
+]

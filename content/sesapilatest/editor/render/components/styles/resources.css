@@ -1,0 +1,60 @@
+.resources-container {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.resources-container .band {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--app-main-theme-tone);
+    font-weight: bold;
+}
+
+.resources-container .band .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resources-container .band .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.resources-container .container {
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.resources-container .container .resource {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px 10px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    color : var(--app-main-theme-text-color);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--app-main-theme-background-darker);
+    transition: 0.3s;
+}
+.resources-container .container .resource:hover {
+    background-color: var(--app-main-theme-background-darker-2);
+}
+
+.resources-container .container .resource .icon svg {
+    width: 25px;
+    height: 25px;
+    fill:var(--app-main-theme-text-color) !important;
+}
+.resources-container .container .resource .icon svg * {
+    fill:var(--app-main-theme-text-color);
+}

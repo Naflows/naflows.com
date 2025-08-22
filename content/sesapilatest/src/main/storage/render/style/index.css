@@ -1,0 +1,208 @@
+/*
+
+    This styling part manages the main-menu renders 
+    of the articles written and saved locally.
+
+*/
+
+.storage-render {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.article-read-display {
+    width: fit-content;
+    background-color: var(--app-main-theme-background-high-transparent);
+    padding: 20px 10px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    gap: 5px;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.article-read-display:hover  {
+    background-color: var(--app-main-theme-background-high-transparent-2);
+}
+
+.article-read-display .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: auto;
+    transition: 0.3s;
+}
+.article-read-display .statistics {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    max-width: 200px;
+    transition: 0.3s;
+}
+.article-read-display .statistics span {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.article-read-display.new-article svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Actions */
+
+.article-read-display a {
+    text-decoration: none;
+    color: unset;
+    font-size:  unset;
+}
+.article-read-display a:hover {
+    text-decoration: none;
+}
+
+.article-read-display .open-more-actions {
+    position:relative;
+    width: fit-content;
+    height: fit-content;
+    pointer-events: auto;
+    z-index: 2;
+    transition: 0.3s;
+}
+.article-read-display .open-more-actions .button {
+    padding: 5px;
+    width: fit-content;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -10px;
+}
+.article-read-display .open-more-actions .button:hover {
+    background-color: var(--app-main-theme-background-high-transparent);
+}
+
+.article-read-display .open-more-actions .actions {
+    background-color: var(--app-main-theme-background) ;
+    box-shadow: 0px 0px 10px var(--app-main-theme-background-high-transparent-3);
+    position:absolute;
+    border-radius: 10px;
+    width: 200px;
+    min-width: fit-content;
+    z-index: 3;
+    transition: 0.2s;
+    overflow: hidden;
+    right: 0;
+    margin: auto;
+}
+.article-read-display .open-more-actions .actions .small-view-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% - 20px);
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.article-read-display .open-more-actions .actions .small-view-action:hover {
+    background-color: var(--app-main-theme-background-high-transparent);
+}
+.article-read-display .open-more-actions .actions .small-view-action .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article-read-display .open-more-actions .actions .small-view-action .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.storage-render.line {
+    flex-direction: column;
+    flex-wrap: unset;
+}
+
+.article-read-display.line {
+    width: calc(100% - 40px);
+    padding: 20px;
+    height: 5vh;
+    justify-content: space-between;
+}
+.article-read-display.line a {
+    width: calc(100% - 200px - 50px);
+}
+.article-read-display.line .content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.article-read-display.line a {
+    align-items: center;
+}
+.article-read-display.line .content .header {
+    width: calc(100% - 200px - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-read-display.line .open-more-actions {
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    padding: 0;
+    z-index: 50;
+}
+.article-read-display.line .open-more-actions .button {
+    display: none;
+}
+.article-read-display.line .open-more-actions .actions {
+    opacity: 1 !important;
+    display: flex !important;
+    position:relative !important;
+    visibility: visible !important;
+}
+.article-read-display.line .open-more-actions .actions .small-view-action {
+    justify-content: center;
+}
+.article-read-display.line .open-more-actions .actions .small-view-action .icon {
+    display: none;
+}
+
+.article-read-display.line .content .header .description {
+    font-size: 13px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-read-display.line .content .header .name {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-read-display .open-more-actions .actions .small-view-action:hover {
+    background-color: var(--app-main-theme-background-darker-2);
+}

@@ -1,0 +1,41 @@
+.switch  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.switch .switcher {
+    padding: 5px;
+    border-radius: 50px;
+    width: 40px;
+    height: 20px;
+    background-color: var(--app-main-theme-background-darker);
+    cursor: pointer;
+    position:relative;
+}
+.switch .switcher .button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--app-main-theme-background-darker-3);
+    transition: 0.3s;
+    position:absolute;
+    top:0;bottom:0;left:5px;margin: auto;
+}
+
+.switch.off .name {
+    color: var(--app-main-theme-text-color-transparent);
+    transition: 0.3s;
+}
+.switch.on .name {
+    color: unset
+}
+.switch .description {
+    font-size: 14px;
+}
+
+.switch.on .button {
+    background-color: var(--app-main-theme-tone);
+    left: calc(100% - 5px - 20px);
+}

@@ -1,0 +1,221 @@
+[
+    {
+        "id" : [9],
+        "titles" : [
+            {
+                "name" : "The biggest project",
+                "id" : 1
+            },
+            {
+                "name": "Objective",
+                "id": 2
+            }
+        ],
+        "paragraphs" : {
+            "1" : [
+                "This project is a turning point for me, as it allowed me to explore new ideas and technologies in order to achieve on the biggest project I ever made.",
+                "It takes its roots inside the auto-entrepreneurship plans of Mougel David, who wanted to create a business dedicated to creating custom solutions for individuals and businesses alike. It includes websites, portfolio, android apps or even custom infrastructures.",
+                "In a wish of designing the perfect business environment, David soon focused on a wish to create its own backend structure, in order to have full control of the data, the security, and the scalability of his business.",
+                "Soon, the main idea of the business shifted, moving to a more modular and flexible architecture, allowing for easier integration of new features and services, and ultimately leading to the creation of the NAFLOWS ecosystem - firstly focused on future sells of API keys of the Naflows Autenthication Secure System, so people could have a reliable and open-source business to work with.",
+                "Designed at first to work only within the NAFLOWS ecosystem, it has since evolved into something much larger, aiming to help developers and individuals to manage easily accounts, data in a secure, controlled, carefully designed manner."
+            ],
+            "2" : [
+                "This business represents the professional growth and development of its founder, Mougel David, as he navigated the challenges of entrepreneurship and sought to create a meaningful impact in the tech industry.",
+                "For now, the project is estimated to be published in early 2026, as studies and student job are taking time and resources."
+            ]
+        }
+    },
+    {
+        "id" : [6],
+        "titles" : [
+            {
+                "name" : "The first project",
+                "id" : 1
+            },
+            {
+                "name" : "Lot of bugs",
+                "id" : 2
+            },
+            {
+                "name" : "That anecdotic name fight",
+                "id" : 3
+            },
+            {
+                "name" : "About the website",
+                "id" : 4
+            }
+        ],
+        "paragraphs" : {
+            "1" : [
+                "This was one of the projects I was the most hyped about. « The teenager discovering Starblast.io, being amazed by all the possibilities of creation that were given to the players ».",
+                "This is where I started to get some ideas, to develop my imagination, trying to help people have fun by providing some unique ways of playing. It started with some custom ships games, and then I built my first mod, and then my second… After a few months playing and getting known in the community, I started getting some ideas from friends who thought a team-dueling game mode could be a good idea, since dueling was really popular. Despite its small community and dev support, the game was famous for its dueling games and high-demands-on-skills-games",
+                "Despite the wish of making a community event with a ranked leaderboard, such as Starblast Dueling Championship, I never managed to accomplish this goal. I even created a tournament mode for Jannes, the founder of the Game of The Night."
+            ],
+            "2" : [
+                "Since it was my first big project, it had some big bugs and had huge revamps. At first, the game mode was about fighting in teams against others and against aliens. Gaining points, reaching a goal.. And then, why not just make a game mode with an arena shrinking, where players could fight each other with their dueling and teaming skills.",
+                "I hosted a lot of games, asked for a lot of advice, and nothing of this could have ever happened without 123 Notus. Thank you, buddy.",
+                "All the bugs never stopped the players from joining my games, and this was so much fun to play. So many good memories of fighting, laughing, struggling.",
+                "But, overall, playing was always fun. Bugs disappeared more and more over the time, and even if the latest version is still a little bugged, the whole game is easily playable, with good performances. Can’t wait to play again with some buddies."
+            ],
+            "3" : [
+                "At the time, there was another mod called “Starblast Arena”, and even if I tried my best to keep my name for my mod, I had to change it to “Starblast Team Fights”, because the community itself already had kept Starblast Arena as an iconic name for an iconic advanced mod.",
+                "SA, Glitch, Koro, wink wink :)"
+            ],
+            "4" : [
+                "This website was one of the first I built, and one of the best ones in terms of look. Entirely made out of CSS, JS, HTML, without any framework. Still proud of it. Messing around the github links to get up-to-date links of the mod…it was a fun experience."
+            ]
+        }
+    },
+    {
+        "id" : [4,5,7],
+        "titles": [
+            {
+                "name": "One of my most impressive works",
+                "id": 1
+            },
+            {
+                "name": "Messy project",
+                "id": 2
+            },
+            {
+                "name": "Incredible database",
+                "id": 3
+            },
+            {
+                "name": "Some controversies",
+                "id": 4
+            },
+            {
+                "name": "A long time…",
+                "id": 5
+            }
+        ],
+        "paragraphs": {
+            "1": [
+                "This definitely is a hit for me. These three projects (actually one, called, globally, « Sesame »), is one of my biggest ambitions and successes. Even if it may not remain in people’s memory, it holds a special place in my heart.",
+                "This project is a whole browser for a database related to Starblast.io created by me, with the help of Rithy, coded only in JS, HTML, CSS. Without any framework. There is a lost version, even so impressive, hidden somewhere. I don’t know where, tho.",
+                "I believe this definitely showed my motivation and patience, because I definitely don’t know how I did so much work with so little possibilities. Building this in React would have been easier.",
+                "Being able to find it again was such a relief.",
+                "People are able to find ships, mods, or scripts to download and play, use, or even improve. They are able to find people’s social connections, or Starblast clans’ servers.",
+                "Each data has its own connections, and you can find mod creators, click on one, and see all his data, contributions, ships, mods…"
+            ],
+            "2": [
+                "This project is definitely a bad coding situation. Any developer reading the code or the project schema would have a stroke, and so do I. But eh, it was my first huge project!",
+                "I built a database saved on github, and edited through Github tokens and permissions. It definitely wasn’t optimized, but it helped me build some systems.",
+                "The database was composed of users, servers, ships, scripts, and mods. Any scripts could be downloaded and of course verified by the administrators first.",
+                "At first, we manually added the data into the github repository, but I started developing an admin panel (Sesamod) for us to have easier database maintenance. It worked.",
+                "The user interface is actually quite good, I am proud of this.",
+                "Linked was also made to improve user’s input, since we first started Discord users to make their own data."
+            ],
+            "3": [
+                "We created, by hand, a database of almost 450 different data. With sleek display of each data. Fine animation. Linked content."
+            ],
+            "4": [
+                "For the record, I had troubles with the Starblast Main Discord server, where I was a helper, because I wanted to preserve the history of Starblast through my database, and so didn’t want to remove the banned clans / servers.",
+                "So, I created a shadowban feature to prevent displaying results related to forbidden content."
+            ],
+            "5": [
+                "This project was a year-project. I put in so much time and effort, and definitely didn’t expect to find it again.",
+                "So, Sesame, this is a tribute to you. You are the start of everything, and the proof of what I can achieve.",
+                "Looking back at you, I see my young-self happy to create and build things, thrilled by the endless possibilities of my code and my imagination.",
+                "You are one of my biggest achievement."
+            ]
+        }
+    },
+    {
+        "id" : [2,8],
+        "titles": [
+            {
+                "name": "Combining two passions",
+                "id": 1
+            },
+            {
+                "name": "Sprint+",
+                "id": 2
+            },
+            {
+                "name": "WriPilTra",
+                "id": 3
+            },
+            {
+                "name": "Overall",
+                "id": 4
+            }
+        ],
+        "paragraphs": {
+            "1": [
+                "I always liked writing. And so did I for coding. So, I tried to create a website made for writers, just like the NaNoWriMo website.",
+                "This had all the customization I wanted to have as a writer, and also a bunch of features for easily writing and planning things out.",
+                "This project took 2-3 years of thinking and idling, and had two major versions: Sprint+ and Wripiltra.",
+                "Overall, I’m really happy of both. These are so great work of mine, even if far from perfect."
+            ],
+            "2": [
+                "This was my first try. I recall spending days and days in the summer trying to figure out things.",
+                "It works entirely with CSS, JS, HTML, without any framework.",
+                "Once again, as for Sesame, this is a great achievement for me. I didn’t know any framework before, and tried to do everything by myself."
+            ],
+            "3": [
+                "This one was done with React, and the experience of Sprint+.",
+                "It is a less-weighted version of Sprint+, since it has less features, but a sleek UI rework and also some improved features such as the project creation, or the writing functionalities."
+            ],
+            "4": [
+                "This is definitely not my best project, nor the project I love the most.",
+                "But it has this sparkle I’ve been missing for a long time, it has this exciting thrill of improvement and accomplishment.",
+                "Maybe this could become a Naflows service one day, who knows?"
+            ]
+        }
+    },
+    {
+        "id" : [1],
+        "titles" : [
+            {
+                "id" :1,
+                "name" : "My first real-life project"
+            },
+            {
+                "id" : 2,
+                "name" : "First algorithm"
+            },
+            {
+               "id" : 3,
+               "name" : "Real-life consequences" 
+            },
+            {
+                "id" : 4,
+                "name" : "Bruh"
+            }
+        ],
+        "paragraphs" : {
+            "1" : [
+                "This one was about the bus lines of Albi. I had the idea to create a small webapp for people to be able to find bus’ times for each line of Albi.",
+                "I first struggled to find a viable and public database containing all the information I needed: lines name, stops positions, etc… And then, guess what, I struggled understanding it. But eh, believe in yourself! I figured it out and decided to exploit what I had found. "
+            ],
+            "2" : [
+                "Algus was my first attempt at building an algorithm. It had two variants, Nestus and another one I lost… Nestus was about nesting the fetches of the data in order to triangulate the correct stop times. Built in Javascript, it had a main “brain” and instances for each data type, some kind of neuronal system in order to sort data in each instance. I was proud of it.",
+                "It had some fine implementation with React, combining display and results did quite fine.",
+                "The algorithm is quite slow, tho. It takes a small amount of time to load the results of a single line."
+            ],
+            "3" : [
+                "Thanks to a friend, I managed to expose my project to a line manager of the Libea company, working for Albi with its buses. Sadly, he told me there was no way I could get any support from them in my project.",
+                "Still, being able to do such things as meeting people from a company because of my projects was an interesting experience. "
+            ],
+            "4" : [
+                "I found out later that the database was actually obsolete :("
+            ]
+        }
+    },
+    {
+        "id" : [3],
+        "titles" : [
+            {
+                "id" : 1,
+                "name" : "A small project"
+            }
+        ],
+        "paragraphs" : {
+            "1" : [
+                "I don’t remember where this project comes from. I happened to, one day, want to create an article-editor so I could write documentations, or anything I wanted. So, I tried to code it. It has a small storage functionality for keeping the data, and also downloading / uploading it."
+            ]
+        }
+    }
+]

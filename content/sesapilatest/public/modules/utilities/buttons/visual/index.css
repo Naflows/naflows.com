@@ -1,0 +1,138 @@
+
+/* General properties */
+.button {
+    color : var(--app-main-theme-tone-text);
+}
+
+.button .button-icon svg * {
+    fill : var(--app-main-theme-tone-text) !important;
+}
+
+.button:not(.button.contains-svg-only) {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/*   Filled button   */
+.button.filled {
+    background-color: var(--app-main-theme-tone);
+    fill: var(--app-main-theme-tone-text);
+    border: 2px solid var(--app-main-theme-tone);
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button.filled:hover {
+    background-color: var(--app-main-theme-tone-ligther);
+    border-color: var(--app-main-theme-tone-ligther);
+
+}
+.button.filled .button-icon svg, .button.filled .button-icon svg * {
+    fill: var(--app-main-theme-tone-text) !important;
+}
+.button.filled .button-icon {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG only */
+.button.contains-svg-only {
+    padding: 10px;
+    border-radius: 10px;
+}
+.button.contains-svg-only .button-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Unfilled button */ 
+.button.unfilled {
+    border: 2px solid var(--app-main-theme-tone);
+    color: var(--app-main-theme-tone);
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button.unfilled:hover {
+    background-color: var(--app-main-theme-tone-transparent);
+}
+
+.button .button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button .button-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.button.colorsvg svg {
+    fill : var(--app-main-theme-tone)
+}
+
+
+/* Blank buttons */ 
+.button.blank .button-icon svg, .button.blank .button-icon svg * {
+    fill: var(--app-main-theme-tone) !important;
+}
+
+.button.blank {
+    color: var(--app-main-theme-tone);
+    border: 2px solid rgba(0,0,0,0);
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button.blank:hover {
+    background-color: var(--app-main-theme-background-darker-2);
+    border-color: var(--app-main-theme-background-darker-2);
+}
+
+
+
+/* Textual */
+.button.textual {
+    border: 2px solid rgba(0,0,0,0);
+    color: var(--app-main-theme-tone);
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button.textual:hover {
+    background-color: var(--app-main-theme-background-darker-2);
+}

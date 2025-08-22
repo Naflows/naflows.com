@@ -1,0 +1,121 @@
+/*
+              <div class="ab-pj">
+                    <div class="pj-name">
+                        ${JSON.parse(value).name}
+                    </div>
+                    <div class="pj-p">
+                        <input type="text">
+                    </div>
+                </div>
+*/
+
+.ab-pj {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pj-p  {
+    width: 100%;
+    text-align: center;
+}
+.pj-p input {
+    background-color: rgba(36, 51, 90,0.5);
+    border: none;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    color:white;
+}
+
+.AlertBox {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;        background-color: #19284d;
+    padding: 10px;
+    border-radius: 20px;    padding-bottom:10px;
+
+}
+.ab-title {
+    font-size: 25px;
+    font-weight:600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ab-infos {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: hidden;
+
+}
+.AlertBox button {
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 50px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 2px rgba(36, 51, 90,0.5);
+    background-color: rgba(36, 51, 90,0.5);
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.AlertBox button:hover {
+    border: solid 2px red;
+}
+
+@media screen and (320px <= width <= 420px) {
+    .AlertBox {
+        width: 100%;
+        height: 100%;
+        background-color: #19284d;
+        border-radius: 20px;
+    }
+    .AlertBox button {
+        background-color: rgba(36, 51, 90,0.5);
+        border-radius: 50px;
+        width: fit-content;
+        padding: 5px;
+        padding-left:25px;
+        padding-right: 25px;
+        border: 2px solid rgba(36, 51, 90,0.5);
+        -webkit-tap-highlight-color: transparent;
+
+
+    }
+    .ab-infos {
+        margin-top: unset;
+        width: 80%;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius:10px;
+        background-color: rgba(36, 51, 90,0.1);
+        border-radius: 20px;
+    }
+    .pj-p input{
+        background-color: rgba(36, 51, 90,0.5);
+        width: 90%;
+        padding-left: 10px;;
+    }
+    .ab-title {
+        font-weight: 100;
+    }
+
+}

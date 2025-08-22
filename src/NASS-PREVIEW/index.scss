@@ -1,0 +1,145 @@
+:root {
+    --text-color: #4cffc9;
+    --text-color-hover: rgb(180, 255, 232);
+    --background-color: rgb(33, 43, 145);
+}
+
+
+.nass-preview {
+    background-color: var(--background-color);
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nass-button {
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;;
+
+    &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+
+        * {
+            fill: var(--text-color);
+        }
+    }
+}
+
+.nass-preview {
+    padding: 5% 10%;
+    width: calc(100vw - 20%);
+
+    footer {
+        position:fixed;
+        bottom:0;
+        left:0;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        .presentation {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: start;
+            justify-content: start;
+            width: 100%;
+
+
+        }
+
+        .main-header {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            color: var(--text-color);
+            gap: 10px;
+
+            img {
+                height: 100px;
+            }
+
+            .socials {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+
+                .social-icon {
+                    background-color: var(--text-color);
+                    width: fit-content;
+                    height: fit-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    padding: 5px;
+                    
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: var(--text-color-hover);
+                    }
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+
+                        * {
+                            fill: var(--background-color);
+                        }
+
+                    }
+                }
+            }
+
+            .title {
+                font-size: 75px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .description {
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,173 @@
+.menu {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    background-color: var(--app-background-color-transparent);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 100;
+    overflow: hidden;
+
+    #menu-roll {
+        position: relative;
+        .roll-up-menu {
+            z-index: 2;
+        }
+        .roll-up-menu-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            border-radius: var(--app-tertiary-border-radius);
+            animation: menu-parameters-appear 0.3s ease;
+            overflow: hidden;
+            z-index: 1;
+            .buttons-container {
+                width: 100%;
+                background-color: var(--app-background-color-tertiary);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .button {
+                width: 100%;
+                border-radius: var(--app-tertiary-border-radius);
+            }
+        }
+    }
+
+    .logotype {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        svg {
+            width: fit-content;
+            height: 100px;
+        }
+    }
+    .menu-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .button {
+            width: 100%;
+        }
+    }
+}
+
+.menu.no-view {
+    .button {
+        width: 100% !important;
+        .text {
+            display: none;
+        }
+    }
+}
+
+.menu.view {
+    width: 250px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: calc(100% - 20px) !important;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        top: unset !important;
+        bottom:-2px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position:fixed;
+        overflow: unset !important;
+        background-color: var(--app-background-color);
+        .logotype {
+            display: none;
+        }
+        .menu-content {
+            overflow: unset !important;
+
+            margin: auto;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            .section {
+                flex-direction: row;
+            }
+            button:not(.roll-up-menu-content.phone.view button) {
+                display: flex;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 5px !important;
+                width: 50px !important;
+                height: 50px !important;
+                .text {
+                    display: none;
+                }
+            }
+        }
+
+        #menu-roll {
+            overflow: unset !important;
+            .roll-up-menu-content.view {
+                z-index: 20;
+                position:fixed !important;
+                left:0px;
+                width: calc(100% - 19px);
+                height: 100vh;
+                z-index: 500;
+                background-color: unset !important;
+                padding-top: 5px;
+                border-radius: 0px;
+                bottom: 0px !important;
+                .back {
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(5px);
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.9);
+                    height: 100%;
+                    position: absolute;
+                    z-index: 2;
+                }
+                .buttons-container {
+                    margin-top: auto;
+                    border-radius: 50px 50px 0 0 ;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    z-index: 5;
+                }
+                * button {
+                    width: 80% !important;
+                    .text {
+                        display: flex;
+                        font-size: 20px;
+                    }
+                    .icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

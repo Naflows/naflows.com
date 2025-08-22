@@ -1,0 +1,265 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@keyframes AnimateLearnMore {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes AnimateLearnMoreBack {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes AnimateFont {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes AnimateFontBack {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.archives-informations {
+    display: none;
+    img {
+        border-radius: 50%;
+        height: 150px;
+    }
+}
+
+.archives-picker {
+    font-family: "Nunito", serif;
+    * {
+        transition: all 0.3s;
+    }
+    display: flex;
+    flex-direction: column;
+    gap:15vh;
+    align-items: center;
+    margin-bottom: 15vh;
+    display: flex;
+    
+
+    .archives-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: map-get(
+            $gaps,
+            app-first-gap
+        );
+        align-items: center;
+        img {
+            height: 150px;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            color: map-get(
+                $colors,
+                app-text-color-on-background
+            );
+        }
+    }
+    .fields {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+        width: 100%;
+        .field {
+            display: flex;
+            flex-direction: column;
+            width: calc(
+                50% - 25px
+            );
+            transition: all 0.3s;
+            height: fit-content;
+            gap: map-get($gaps, app-first-gap);
+            justify-content: start;
+            position:relative;
+            .field-content {
+                z-index: 2;
+                background-color: map-get(
+                    $colors,
+                    app-background-color-darker
+                );
+                border-radius: map-get(
+                    $radiuses,
+                    app-first-border-radius
+                );
+                height: 100%;
+                padding: map-get(
+                    $paddings,
+                    app-first-padding
+                );
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap:map-get($gaps, app-first-gap);
+                .field-svg {
+                    height: 150px;
+                    svg,img {
+                        height: 100%;
+                        border-radius: map-get(
+                            $radiuses,
+                            app-first-border-radius
+                        );
+                    }
+                }
+                .field-header {
+                    display: flex;
+                    flex-direction: column;
+                    gap: map-get(
+                        $gaps,
+                        app-second-gap
+                    );
+                    .field-age {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+                .field-body {
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    gap: map-get($gaps, app-second-gap);
+                    .field-header{
+                        display: flex;
+                        flex-direction: column;
+                        gap: map-get($gaps, app-first-gap);
+                        align-items: center;
+                        margin: auto;
+                        .field-title {
+                            font-size: 40px;
+                            font-weight: 700;
+                        }
+                    }
+                    .field-description {
+                        padding: map-get(
+                            $paddings,
+                            app-second-padding
+                        ) 0;
+                        color: map-get(
+                            $colors,
+                            app-text-color-on-background
+                        );
+                    }
+                    .archive-contributors {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .archive-contributors-title {
+                            color:map-get(
+                                $colors,
+                                app-text-color-on-background-lighter
+                            );
+                            font-size: 14px;
+                        }
+                        .archive-contributors-list {
+                            display: flex;
+                            flex-direction: row;
+                            gap: map-get($gaps, app-second-gap);
+                            font-weight: bold;
+                        }
+                    }
+                }
+    
+                .buttons-container {
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    gap: map-get($gaps, app-second-gap);
+                    margin: auto;
+                    width: 100%;
+                    button {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #root {
+        max-width: unset !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 90% !important;
+        .archives-picker {
+            .archives-title {
+                width: 100%;
+                img {
+                    width: 90%;
+                    height: fit-content;
+                }
+            }
+            .fields {
+                flex-direction: column;
+                .field {
+                    width: calc(
+                        100% - map-get(
+                            $paddings,
+                            app-first-padding
+                        )
+                    );
+                    * .field-svg {
+                        width: 100%;
+                        max-width: 150px;
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+    .learn-more-box {
+        width: calc(
+            100% - map-get(
+                $paddings,
+                app-first-padding
+            )
+        );
+        margin-bottom: 0;
+        border-radius: 0;
+        margin-top: 0;
+        .learn-box-content {
+            width: 95%;
+        }
+    }
+}

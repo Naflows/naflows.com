@@ -1,0 +1,71 @@
+.field.header-special {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    .new-image {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: var(--app-main-border-radius);
+        .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position:relative;
+            .icon-alone-display {
+                position:absolute;
+                bottom:-5px;
+                right: -5px;
+                background-color: var(--app-background-color-secondary);
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: var(--app-main-border-radius);
+                object-fit: cover; 
+            }
+        }
+        input {
+            display: none;
+        }
+    }
+    .input {
+        width: calc(100% - 100px - 50px);
+        .display-column {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .field.header-special {
+        .input {
+            width: calc(100% - 90px);
+            input {
+                width: 100%;
+            }
+        }
+        .new-image {
+            width: 100px;
+            height: 100px;
+            .image {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    * .field {
+        margin: unset !important;
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital@0;1&display=swap');
+
+:root {
+    --route-background-color : rgb(0, 20, 30);
+    --route-background-color-hover : rgb(0, 30, 46);
+
+
+    --app-fill-color-light : rgb(243, 245, 247);
+    --app-blured-background : rgba(108, 108, 108, 0.3);
+
+    --app-background-color : rgb(232, 232, 232);
+    --app-background-color-hover-2 : #dcdcdc;
+    --app-background-color-hover : rgb(241, 241, 241);
+
+    --app-font-color-on-white : rgb(14, 14, 14);
+    --app-font-color-on-black : rgb(246, 246, 246);
+
+    --app-header-height : 50px;
+
+    --libea-main-color-1 : rgb(230, 18, 101);
+    --libea-main-color-1-01 : rgba(230, 18, 101,0.3);
+
+    --libea-main-color-2 : #f39200;
+    --libea-main-color-2-01 : rgba(243, 146, 0,0.3);
+
+}
+* .bold {
+    font-weight: bold !important;
+}
+* .unbold {
+    font-weight: normal;
+}
+* {
+    transition: 0.3s;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: var(--app-background-color) !important;
+    color : var(--app-font-color-on-white);
+    background-image: url("/public/frames/LineFrames.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    a, .colorful {
+        background: -webkit-linear-gradient(45deg,var(--libea-main-color-1), var(--libea-main-color-2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+    * .colorful {
+        cursor: pointer;
+    }
+    * {
+        transition: 0.3s;
+        font-family: "Nunito",sans-serif;
+    }
+    a:hover, .colorful:hover {
+        text-decoration: underline !important;
+    }
+    #root {
+        padding: 0;
+        position:absolute;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+    }
+}

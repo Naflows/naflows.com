@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rethink+Sans&display=swap');
+:root {
+    --app-main-theme-tone : #626ef4;
+    --app-main-theme-tone-text : white;
+    --app-main-theme-tone-ligther : #7782f9;
+    --app-main-theme-tone-transparent : rgba(119, 130, 249,0.2);
+    --app-main-theme-tone-transparent-2 : rgba(119, 130, 249,0.2);
+
+
+    --app-main-theme-text-color : rgb(15, 15, 15);
+    --app-main-theme-text-color-transparent : rgba(18, 18, 18,0.4);
+    --app-main-theme-text-color-transparent-2 : rgba(18, 18, 18,0.7);
+    --app-main-theme-background : #f8f8f8;
+    --app-main-theme-background-darker : #f0f0f0;
+    --app-main-theme-background-darker-2 : #e8e8e8;
+    --app-main-theme-background-darker-3 : #d3d3d3;
+    --app-main-theme-background-darker-4 : #282828;
+
+    --app-main-theme-background-high-transparent : rgba(0, 0, 0,0.025);
+    --app-main-theme-background-high-transparent-2 : rgba(0, 0, 0,0.06);
+    --app-main-theme-background-high-transparent-3 : rgba(0, 0, 0,0.1);
+
+
+    --app-main-text-font : 'Rethink Sans', sans-serif;
+}
+
+
+body {
+    font-family: var(--app-main-text-font);
+}
+
+body * .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* For webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--app-main-theme-tone-ligther);
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--app-main-theme-tone);
+  }
+  
+

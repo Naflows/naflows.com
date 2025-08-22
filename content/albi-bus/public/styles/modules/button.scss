@@ -1,0 +1,16 @@
+.app-button {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgba(0,0,0,0);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.app-button.main {
+    background-color: var(--libea-main-color-2);
+    border: 2px solid var(--libea-main-color-2);
+}

@@ -1,0 +1,101 @@
+.fields {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.field {
+    padding: 20px 5px 20px 20px ;
+    width: calc(100% - 25px);
+    background-color: var(--app-main-theme-background-darker);
+    border-radius: 20px;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+}
+.field .content {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.field .tools {
+    background-color: rgba(0,0,0,0) !important;
+    position:absolute;
+    overflow: hidden;
+    right: 10px;
+    top: 10px;
+}
+
+.field .tools svg {
+    width: 20px;
+    height: 20px;
+}
+.field .tools .icon {
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+}
+.field .tools .icon:hover {
+    background-color: var(--app-main-theme-background-darker-3);
+}
+
+.field .tools .parameters {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--app-main-theme-background);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px var(--app-main-theme-background-high-transparent-3);
+}
+.field .tools .parameters .parameter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.field .tools .parameters .parameter:hover {
+    background-color: var(--app-main-theme-background-darker-2);
+}
+
+
+.field .content textarea, .field .content input {
+    font-size: 15px !important;
+}
+.field .content textarea:hover, .field .content textarea:focus, .field .content input:hover, .field .content input:focus {
+    background-color: var(--app-main-theme-background-darker-2);
+}
+
+.fixed_new_fields svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+.fixed_new_fields{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 2;
+    padding: 20px !important;
+    border-radius: 50px !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+}
+.fixed_new_fields .button-text {
+    opacity: 0;
+    white-space: nowrap;
+    position:absolute;
+    transition: 0.3s;
+}
+

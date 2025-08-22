@@ -1,0 +1,86 @@
+
+
+
+.line-head.view {
+    .content {
+        display: flex;
+    }
+    .line-drop {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
+.line-head {
+    .line-drop {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+        padding: 10px;
+        width: calc(100% - 20px);
+        svg {
+            height: 20px;
+            width: 20px;
+            * {
+                fill: var(--libea-main-color-2)
+            }
+        }
+    }
+    .content {
+        display: none;
+        flex-direction: column;
+        gap: 1px;
+        .time {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: calc(100% - 20px);
+            border-radius: 20px 20px 0 0;
+            gap: 5px;
+            border: 2px solid var(--app-background-color-hover-2);
+            border-style: none none solid none;
+            .stop {
+                width: calc(100%);
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                align-items: center;
+            }
+            .times {
+                display: flex;
+                flex-direction: row;
+                width: calc(100%);
+                align-items: center;
+                .times-container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20%;
+                    width: calc(40% - 15%);
+                }
+                .time-left {
+                    display: none;
+                    flex-direction: row;
+                    width: fit-content;
+                    gap: 10px;
+                    height: fit-content;
+                    align-items: center;
+                    padding: 0 10px 0 10px;
+                    border-radius: 10px;
+                    background-color: var(--libea-main-color-2-01);
+                    margin-left: auto;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                        * {
+                            fill:black;
+                        }
+                    }
+                }
+                .time-left.view {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

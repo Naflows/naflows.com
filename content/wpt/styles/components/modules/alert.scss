@@ -1,0 +1,286 @@
+.alert-box {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position:fixed;
+    top:0;
+    z-index: 200;
+
+    left:0;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    .field {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            span {
+                line-height: 25px;
+            }
+        }
+    }
+    .alert.dispatch-header {
+        .content {
+            display: none;
+        }
+        .body-container {
+            margin-top: 0px !important;
+        }
+    }
+    .alert.big {
+        padding-bottom: 10px;
+        border-radius: 0px;
+        min-width: calc(
+            100% - 60px
+        );
+        min-height: calc(
+            100% - 30px
+        );
+    }
+    .alert.align-center {
+        .body-container {
+            .app-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    }
+    .alert {
+        .message-alert {
+            font-weight: bold;
+            color:rgb(156, 51, 51);
+            font-size: 12px;
+            margin-top: -10px;
+        }
+        position:relative;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        color: var(--app-text-color);
+        background-color: var(--app-background-color-secondary);
+        width: fit-content;
+        height: fit-content;
+        padding: 30px 30px 30px 30px;
+        border-radius: var(--app-second-border-radius);
+        border: 5px solid var(--app-background-color-tertiary);
+        position: absolute;
+    
+        animation : alert-box-appear 0.3s ease-in-out;
+        overflow: hidden;
+        overflow-y: auto;
+    
+        min-width: 40%;
+        min-height: 30%;
+        max-width: 80%;
+        max-height: 80%;
+        .content {
+            // position:absolute;
+            // left:0px;
+            // top:0px;
+            animation : alert-box-appear 0.3s ease-in-out;
+
+            width: calc(100%);
+            background-color: var(--app-background-color-secondary);
+            padding: 0px 0px 30px 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            .close {
+                position:fixed;
+                right:10px;
+                top:10px;
+                height: fit-content;
+                width: fit-content;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: var(--app-main-border-radius);
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .close:hover {
+                background-color: var(--app-background-color-tertiary);
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: var(--app-main-border-radius);
+                object-fit: cover; 
+            }
+            .header {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .title {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .body-container {
+            width: calc(100%);
+            padding-right: 30px;
+        }
+
+        .app-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .field {
+                .hour-input {
+                    display: flex;
+                    flex-direction: row;
+                    input:not([type="date"]) {
+                        width: 80px;
+                    }
+                }
+
+                .moods {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: calc(100% - 10%);
+                    padding: 5px 5%;
+                    flex-wrap: wrap;
+                    .mood {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px 10px;
+                        border-radius: var(--app-main-border-radius);
+                        cursor: pointer;
+                        .name {
+                            width: 100%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .mood.selected {
+                        background-color: var(--app-main-hue);
+                        color:var(--app-background-color);
+                    }
+                }
+            }
+            .idle {
+                display: none;
+            }
+            .input-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                .input-result-displayer {
+                    width: fit-content;
+                    white-space: nowrap;
+                    background-color: var(--app-background-color-tertiary);
+                    padding: 10px;
+                    border: 1px solid var(--app-background-color-tertiary);
+                    border-radius: var(--app-main-border-radius);
+                }
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: end;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .alert-box {
+        position:fixed;
+        display: flex;
+        height: 100vh !important;
+        width: 100vw !important;
+        .alert {
+            bottom: unset !important;
+            right: unset !important;
+            overflow-y: auto !important;
+
+            min-width : calc(100% - 60px);
+            min-height: calc(100% - 30px);
+            max-width: calc(100% - 60px);
+            border-radius: 0px !important;
+            max-height: calc(100% - 30px);
+            padding-bottom: 0px !important;
+            gap: 10px !important;
+            border:none !important;
+            .field {
+                .moods {
+                    justify-content: center !important;
+                    gap: 15px !important;
+                }
+            }
+            .content {
+                width: calc(100% - 40px) !important;
+                flex-direction: column !important;
+                align-items: start !important;
+                gap: 10px !important;
+                .header {
+                    gap: 5px !important;
+                    .title {
+                        font-size: 20px !important;
+                    }
+                }
+                img {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+            }
+            .body-container {
+                overflow: auto !important;
+                padding-right: 10px !important;
+                width: calc(100% + 15px);
+            }
+            .buttons-container {
+                padding-bottom: 15px;
+                width: calc(100% + 40px);
+                margin-left: -20px;
+            }
+            .close {
+                right: 5px !important;
+                top: 5px !important;
+                bottom: unset !important;
+            }
+            .content {
+                padding:  10px 20px 20px 20px;
+                .title {
+                    font-size: 25px !important;
+                }
+            }
+            .app-content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 100%; // Add this line
+            }
+        }
+        
+    }
+}

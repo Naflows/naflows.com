@@ -1,0 +1,68 @@
+@import '../main.scss';
+
+.naflows-popup-box {
+    width: calc(
+        100% - map-get(
+            $paddings,
+            app-second-padding
+        ) * 2
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .naflows-popup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:map-get(
+            $paddings,
+            app-second-padding
+        );
+        .naflows-popup-title {
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+    }
+    border-radius: map-get(
+        $radiuses,
+        app-first-border-radius
+    );
+    padding: map-get(
+        $paddings,
+        app-second-padding
+    );
+    &#naflows-popup-box-error {
+        background-color: map-get(
+            $colors,
+            functional-error-lighter
+        );
+        color: map-get(
+            $colors,
+            functional-error
+        )  !important;
+    }
+    &#naflows-popup-box-success {
+        background-color: map-get(
+            $colors,
+            functional-success-lighter
+        );
+        color: map-get(
+            $colors,
+            functional-success
+        )  !important;
+    }
+    &#naflows-popup-box-warning {
+        background-color: map-get(
+            $colors,
+            functional-warning-lighter
+        );
+        color: map-get(
+            $colors,
+            functional-warning
+        ) !important;
+    }
+}

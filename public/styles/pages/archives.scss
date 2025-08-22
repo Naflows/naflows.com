@@ -1,0 +1,29 @@
+.archives-content {
+    width: 90%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    .archives-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .panel {
+            height: 100%; 
+            
+        }
+    }
+
+    .socials-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 100%;
+        overflow: hidden;
+        button {
+            width: 100%;
+        }
+    }
+}

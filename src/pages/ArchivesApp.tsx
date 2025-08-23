@@ -15,12 +15,13 @@ export default function ArchivePage() {
   const archivesContainerRef = useRef<HTMLDivElement | null>(null);
   const [archiveWidth, setArchiveWidth] = useState<number>(0);
 
-
-  const [displayPanelContent, setDisplayPanelContent] = useState<boolean>(false);
   const displayablePanelRef = useRef<HTMLDivElement | null>(null);
   const displayablePanelHeaderRef = useRef<HTMLDivElement | null>(null);
-  const [panelContentPreferedHeight, setPanelContentPreferedHeight] = useState<number>(0);
+  const [panelContentPreferedHeight, setPanelContentPreferedHeight] =
+    useState<number>(0);
   const [panelHeaderHeight, setPanelHeaderHeight] = useState<number>(0);
+
+  const [selectedProject, setSelectedProject] = useState<Archive | null>(null);
 
   useEffect(() => {
     fetch("/public/data/archives.json")
@@ -73,114 +74,45 @@ export default function ArchivePage() {
   }, []);
 
   return (
-    <>
+    <div className="naflows-page">
+      <div className="naflows-header">
+        <h1>
+          /<a href="./">NAFLOWS</a>/Projects
+        </h1>
+        <p>Explore our most important projects.</p>
+      </div>
+
       <div className="archives-content">
-        {displayLearnMore != null && (
-          <ArticleDisplay
-            project={{ displayLearnMore }}
-            setDisplayLearnMore={setDisplayLearnMore}
-          />
-        )}
-        <div className="row-20 archives-header">
-          <div
-            className="panel panel-image-only"
-            style={{
-              width: archiveWidth * 2 + 20 + 100,
-            }}
-          >
-            <div className="panel-header">
-              <img src="../public/assets/naflows_full_logotype_green.png" />
-              <h2>Explore Naflows' Archives</h2>
-            </div>
-            <div className="description">
-              Discover the history of Naflows' projects and initiatives. Please
-              make sure to click "Learn more" to read the documentation, and
-              learn more about the project.
-            </div>
-          </div>
-          <div
-            className={`panel ${"panel-collapsed"}`}
-            ref={displayablePanelRef}
-            style={{
-              width: archiveWidth * 2 + 20 + 160,
-              height: displayPanelContent ? "fit-content" : 50,
-            }}
-          >
-            <div className="panel-header noselect" onClick={() => {
-              setDisplayPanelContent(displayPanelContent ? false : true);
-            }} ref={displayablePanelHeaderRef}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#e3e3e3"
-                style={{
-                  transform : `rotate(${displayPanelContent ? 180 : 0}deg)`,
-                }}
-              >
-                <path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
-              </svg>
-              <h2>About the Developer</h2>
-            </div>
-            <div className="panel-content" style={{
-              display : displayPanelContent ? "flex" : "none"
-            }}>
-              <img
-                src="/public/MD.jpg"
-                style={{
-                  width: 100,
-                  height: 100,
-                  borderRadius: 50,
-                }}
-              />
-              <div className="panel-body">
-                <div className="panel-body-text">
-                  <h2>Mougel David - Naflows Lead Developer</h2>
-                  <div className="description text-readable">
-                    All the following projects were developed by David Mougel, a
-                    developer since {new Date().getFullYear() - 2020} years, and
-                    has been working on various projects since then. He is a
-                    self-taught programmer, working with NodeJS, React, Express,
-                    Docker, Git, and more.
-                  </div>
-                </div>
-                <div className="socials-buttons">
-                  <button
-                    className="primary-button"
-                    onClick={() => {
-                      window.open("https://github.com/naflouille", "_blank");
-                    }}
-                  >
-                    Follow on GitHub
-                  </button>
-                  <button
-                    className="primary-button"
-                    onClick={() => {
-                      window.open(
-                        "https://www.linkedin.com/in/david-mougel-761297334/",
-                        "_blank"
-                      );
-                    }}
-                  >
-                    Follow on LinkedIn
-                  </button>
-                  <button
-                    className="primary-button"
-                    onClick={() => {
-                      window.open(
-                        "https://github.com/sponsors/naflows/",
-                        "_blank"
-                      );
-                    }}
-                  >
-                    Support the Business
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div className="archived-holder panel width-fit">
+          <div className="content">
+            {archives &&
+              archives.map((archive: Archive) => {
+                if (archive.status === "discontinued") {
+                  return (
+                    <div className="archive-item" key={archive.id}>
+                      <h3>{archive.name}</h3>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#1f1f1f"
+                      >
+                        <path d="M646-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h446L532-634q-12-12-11.5-28t11.5-28q12-12 28.5-12.5T589-691l183 183q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L589-269q-12 12-28.5 11.5T532-270q-11-12-11.5-28t11.5-28l114-114Z" />
+                      </svg>
+                    </div>
+                  );
+                }
+              })}
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+/*
+
         <div className="archive-fields" ref={archivesContainerRef}>
           {archives.map((archive: Archive, index) => (
             <div
@@ -190,7 +122,12 @@ export default function ArchivePage() {
                 minWidth: archiveWidth,
                 maxWidth: archiveWidth,
               }}
+              onClick={() => {
+                setSelectedProject(archive);
+              }}
             >
+              <div className="bc"></div>
+
               <div className="field-content">
                 <div className="field-header">
                   <h3
@@ -203,17 +140,6 @@ export default function ArchivePage() {
                   >
                     {archive.status}
                   </h3>
-                  {archive.svg && (
-                    <div className="field-svg">
-                      <img
-                        src={archive.svg}
-                        alt={archive.name}
-                        style={{
-                          width: "100%",
-                        }}
-                      />
-                    </div>
-                  )}
                 </div>
                 <div className="field-body">
                   <div className="field-header-title">
@@ -222,31 +148,15 @@ export default function ArchivePage() {
                     </h2>
                   </div>
 
-                  <div className="field-description text-readable">{archive.description}</div>
+                  <div className="field-description text-readable">
+                    {archive.description}
+                  </div>
                 </div>
-                <div className="row-20 buttons-container">
-                  <button
-                    className="primary-button"
-                    onClick={() => {
-                      window.location.href = archive.url;
-                    }}
-                  >
-                    Explore
-                  </button>
-                  <button
-                    className="secondary-button "
-                    onClick={() => {
-                      setDisplayLearnMore(archive);
-                    }}
-                  >
-                    Learn more
-                  </button>
-                </div>
+              </div>
+              <div className="arrow-read">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M504-480 348-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L404-268q-11 11-28 11t-28-11q-11-11-11-28t11-28l156-156Z"/></svg>
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </>
-  );
-}
+*/

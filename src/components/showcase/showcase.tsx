@@ -29,7 +29,7 @@ const ShowCase = () => {
     async function getData() {
       const d = await fetchData();
       // Sort data by yearRange
-      d.sort((b, a) => Math.min(...a.yearRange) - Math.min(...b.yearRange));
+      d.sort((b: { yearRange: Array<number> }, a: { yearRange: Array<number> }) => Math.min(...a.yearRange) - Math.min(...b.yearRange));
       setShowcaseData(d);
     }
     getData();

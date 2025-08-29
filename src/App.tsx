@@ -1,7 +1,5 @@
 import "./App.css";
-import AppFooter from "./components/main/footer/footer";
 import Pricing from "./components/home/pricing";
-import { AppHeader } from "./components/main/header";
 import TitleContainer from "./components/main/title-container";
 
 function App() {

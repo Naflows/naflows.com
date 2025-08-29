@@ -1,0 +1,5 @@
+TODO :
+[ ] Faire un script dans l'API de api.naflows.com:3001 pour pouvoir calculer l'offre la plus appropriée à partir d'un panier 
+	- Exemple:
+	- Si quelqu'un prend Application Android + Infrastructure + Maintenance Prioritaire, proposer offre Logiciel
+	- Se baser uniquement sur les trois solutions proposées, puisque les mois offerts sont là pour gagner du prix

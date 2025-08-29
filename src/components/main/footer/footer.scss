@@ -1,0 +1,32 @@
+footer {
+  margin-top: 5%;
+  background-color: var(--on-background-hue-2);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .footer-logo,
+  .footer-links {
+    width: 50%;
+    img {
+      width: 75%;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color : var(--primary-hue-1);
+      font-weight: bold;
+      &:hover {
+        color: var(--primary-hue-2);
+      }
+    }
+  }
+}

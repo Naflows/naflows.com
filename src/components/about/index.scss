@@ -1,0 +1,126 @@
+.about__page {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  .portrait__founder,
+  .informative__content {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: var(--on-background-hue);
+    height: fit-content;
+  }
+  .portrait__founder {
+    flex: 1;
+
+    .informations {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .main__content {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        img {
+          border-radius: 20px 50px 20px 50px;
+          width: 200px;
+          height: 200px;
+        }
+        .main__content_container {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .informations__content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1,
+            h3 {
+              margin: 0;
+            }
+          }
+          .socials__links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            a {
+              p {
+                margin: 0;
+              }
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+              width: 100%;
+
+              text-decoration: none;
+              cursor: pointer;
+              color: var(--primary-hue-1);
+              svg,
+              svg * {
+                fill: var(--primary-hue-1);
+              }
+              svg {
+                width: 20px;
+                height: 20px;
+              }
+
+              &:hover {
+                color: var(--primary-hue-2);
+                svg,
+                svg * {
+                  fill: var(--primary-hue-2);
+                }
+              }
+            }
+          }
+        }
+      }
+      .informations__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h2 {
+          margin: 0;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: var(--on-background-hue-3);
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+  .informative__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      h2 {
+        margin: 0;
+      }
+      h2,
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}

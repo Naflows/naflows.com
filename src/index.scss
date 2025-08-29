@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --main-background-hue: #fefefe;
+  --on-background-hue: #f8f8f8;
+  --on-background-hue-2: #f0f0f0;
+  --on-background-hue-3: #e0e0e0;
+  --on-background-hue-4: #d6d6d6;
+
+  --text-primary-hue: #1f2937;
+  --primary-hue-1: rgb(62, 77, 237);
+  --primary-hue-2: #2530a9;
+  --primary-hue-075: rgba(62, 77, 237, 0.75);
+  --secondary-hue-1: rgb(40, 184, 141);
+  --error-hue: #ed583e;
+  --error-hue-lighter: #f1b2a1;
+  --info-hue: #3e4ded;
+  --warning-hue: #ed9b3e;
+  --confirm-hue: #2fb828;
+  --order-creation: #38bdf8;
+  --order-devis: #6366f1;
+  --order-prototype: #f59e0b;
+  --order-development: #10b981;
+  --order-test: #f43f5e;
+  --order-delivery: #8b5cf6;
+}
+
+
+.warning__informational__box {
+  background-color: var(--error-hue-lighter);
+  border: 1px solid var(--warning-hue);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+body {
+  background-color: var(--main-background-hue);
+  font-family: "Nunito", sans-serif;
+  width: calc(100vw - 10%);
+  margin: 0% 5% 50px 5%;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#colorful {
+  color: var(--primary-hue-1);
+}
+
+.global__container__title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  h2,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+    opacity: 0.5;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 15px;
+    max-width: 50%;
+  }
+}
+
+
+
+.global__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.promotion__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  .promotion__content {
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 20px;
+      max-width: 600px;
+    }
+  }
+
+  .promotion__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+  }
+}
+
+.process-diagram {
+  width: 70%;
+  margin: auto;
+}
+
+.action-button:not(.icon-only-button) {
+  transition: 0.3s;
+  * {
+    transition: 0.3s;
+  }
+  border: 2px solid transparent;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  cursor: pointer;
+  &.fit-content {
+    width: fit-content;
+  }
+  width: calc(100% - 30px);
+  &.primary-button {
+    background-color: var(--primary-hue-1);
+    color: white;
+    * svg,
+    * path {
+      fill: white;
+    }
+    &:hover {
+      background-color: var(--primary-hue-2);
+    }
+  }
+  &.secondary-button {
+    border-color: var(--primary-hue-1);
+    color: var(--primary-hue-1);
+    &:hover {
+      border-color: var(--primary-hue-2);
+      color: var(--primary-hue-2);
+    }
+  }
+}
+.icon-only-button {
+  &:hover {
+    svg,
+    path {
+      fill: var(--primary-hue-2) !important;
+    }
+  }
+}
+.tertiary-button {
+  text-decoration: none;
+  color: var(--primary-hue-1);
+  padding: 0 !important;
+  &:hover {
+    color: var(--primary-hue-2);
+  }
+}
+
+
+

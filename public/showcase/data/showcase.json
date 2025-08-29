@@ -1,0 +1,52 @@
+[
+    {
+        "id" : 1,
+        "name" : "Mise en avant des commerces locaux",
+        "description" : "Ce projet est un design concept pour une application destinée à mettre en avant les commerces locaux et régionaux en utilisant la géolocalisation. L'application vise à aider les utilisateurs à découvrir des boutiques, restaurants et autres services situés à proximité, favorisant ainsi l'économie locale.",
+        "type" : "design",
+        "technologies" : ["Figma"],
+        "banner" : "/public/showcase/banners/commerce-banner.png",
+        "yearRange":  [2024],
+        "link" : "/public/showcase/design-content/commerce-design.pdf"
+    },
+    {
+        "id" : 2,
+        "name" : "Concept visuel du site de NAFLOWS",
+        "description" : "Ce projet est un design concept pour le site web de NAFLOWS, et la première étape du développement de son site web. NAFLOWS se base d'abord sur des maquettes avant de développer ses services et produits.",
+        "type" : "design",
+        "technologies" : ["Figma", "React"],
+        "banner" : "/public/showcase/banners/naflows-banner.png",
+        "yearRange":  [2025],
+        "link" : "/public/showcase/design-content/naflows-design.pdf"
+    },
+    {
+        "id" : 3,
+        "name" : "Naflows Authentication Secure System",
+        "description" : "Le système d'authentification et de gestion des APIs de Naflows, qui assure la sécurité et la confidentialité des données des utilisateurs, au travers d'un système pensé pour être modulaire, stable, et évolutif.",
+        "type" : "developement",
+        "technologies" : ["Node.js", "ExpressJS", "MongoDB","Docker", "Cloud & Deployement", "Backend","Frontend","Security"],
+        "banner" : "/public/showcase/banners/nass-banner.png",
+        "yearRange":  [2025],
+        "link" : "https://github.com/Naflows/naflows-auth"
+    },
+    {
+        "id" : 4,
+        "name" : "Sesame - Base de données",
+        "description" : "Une base de données rudimentaire, de près de 400 données différentes récoltées sur plus de 5 sets différents, qui a marqué le premier projet de Naflouille Creations (Naflows). Basé sur le jeu Starblast.io, ce projet a permis d'explorer les concepts de base de données et de gestion des données, de même que la base du concept d'UI et d'UX, et de mettre à disposition des outils pour faciliter l'accès et la manipulation de ces données auprès des joueurs.",
+        "type" : "developement",
+        "technologies" : ["JSON", "Node.js", "HTML/CSS/JS"],
+        "banner" : "/public/showcase/banners/sesame-banner.png",
+        "yearRange":  [2023],
+        "link" : "https://archives.naflows.com/content/github.io/sesame/index.html"
+    },
+    {
+        "id" : 4,
+        "name" : "Albus & Algus",
+        "description" : "Premiers essais à l'algorithmique via une application orientée autour du réseau Libéa du Grand Albigeois. La base de données a été assimilée sans aide extérieure, et sa logique comprise au travers de l'expérimentation. L'algorithme développé pour calculer les itinéraires a été un élément clé de ce projet.",
+        "type" : "developement",
+        "technologies" : ["Node.js", "React"],
+        "banner" : "https://archives.naflows.com/logo/albus.svg",
+        "yearRange":  [2024],
+        "link" : "https://archives.naflows.com/content/albi-bus/index.html"
+    }
+]

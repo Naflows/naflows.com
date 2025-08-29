@@ -1,0 +1,153 @@
+[{
+    "_id": {
+      "$oid": "6821b26427b109da44816199"
+    },
+    "Nom": "Site vitrine",
+    "A partir de": 750,
+    "Nombre d'heures théorique minimal": 30,
+    "Durée en semaines": 3,
+    "Public ciblé": [
+      "artisans",
+      "particuliers",
+      "écrivains"
+    ],
+    "A propos": "Vous souhaitez assurer votre visibilité en ligne de manière simple et efficace, présenter toutes les informations importantes de votre projet pour que votre public puisse se familiariser avec vos services (présentation de commerce, CV, portfolio).",
+    "Inclus": [
+      "3 maquettes pré-développement",
+      "3 pages post-développement dans le site",
+      "Un menu déroulant ou stable, un carousel d'images",
+      "Un design responsive (téléphones, ordinateurs, tablettes)",
+      "Une accessibilité aux normes"
+    ],
+    "Catégorie": "produit",
+    "Phrase d'accroche": "Pour les indépendants qui n’ont pas peur d’un changement",
+    "Hue": "#3E4DED"
+  },
+  {
+    "_id": {
+      "$oid": "6821b26427b109da4481619a"
+    },
+    "Nom": "Application Android",
+    "A partir de": 1500,
+    "Nombre d'heures théorique minimal": 60,
+    "Durée en semaines": 6,
+    "Public ciblé": [
+      "professionnels",
+      "gestionnaires"
+    ],
+    "A propos": "Vous êtes un professionnel qui souhaite organiser son travail avec de la maniabilité au travers d’un outil de travail plus ou moins complexe afin d’augmenter sa productivité (organisation de stocks, application de notes, ...).",
+    "Inclus": [
+      "3 maquettes pré-développement",
+      "2 pages post-développement dans l'application",
+      "Affichage d'informations via une API",
+      "Recueil d'informations (appareil photo, localisation, API)",
+      "Une accessibilité aux normes"
+    ],
+    "Phrase d'accroche": "Pour les méticuleux qui veulent s’organiser",
+    "Catégorie": "produit",
+    "Hue": "#28B88D"
+  },
+  {
+    "_id": {
+      "$oid": "6821b26427b109da4481619b"
+    },
+    "Nom": "Infrastructure",
+    "A partir de": 2000,
+    "Nombre d'heures théorique minimal": 80,
+    "Durée en semaines": 8,
+    "Public ciblé": [
+      "professionnels"
+    ],
+    "A propos": "Vous êtes un professionnel qui veut dynamiser et moderniser son activité avec efficacité et rigueur, dans l’objectif d’améliorer grandement sa productivité ainsi que celle des ses employés.",
+    "Catégorie": "produit",
+    "Inclus": [
+      "3 maquettes pré-développement",
+      "2 jeux de données stables",
+      "Interface pour visualiser, ajouter, modifier ou supprimer des données",
+      "Sécurité avancée",
+      "Accès multi-utilisateurs (2 utilisateurs)"
+    ],
+    "Hue": "#ED583E",
+    "Phrase d'accroche": "Pour les ambitieux qui veulent grandir"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2ee27b109da448161a0"
+    },
+    "Nom": "Gestion d'hébergement",
+    "Heures max par mois": 2,
+    "A partir de par mois": 50,
+    "Description": [
+      "Mise en place du nom de domaine et des services associés à la solution",
+      "Liaison entre services si nécessaire",
+      "Ajout de fichiers dans le site via FTP"
+    ],
+    "Catégorie": "forfait"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2ee27b109da448161a2"
+    },
+    "Nom": "Maintenance prioritaire",
+    "Heures max par mois": 12,
+    "A partir de par mois": 350,
+    "Description": [
+      "Maintenance de base",
+      "3 sauvegarde de données par mois",
+      "3 mise à jour active par mois (site, base de données, système)",
+      "Gestion SSH si nécessaire"
+    ],
+    "Catégorie": "forfait"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2ee27b109da448161a1"
+    },
+    "Nom": "Maintenance de base",
+    "Heures max par mois": 7,
+    "A partir de par mois": 200,
+    "Description": [
+      "Mise en place du DNS et des services associés à la solution",
+      "Délai de réponse de maximum 24h",
+      "Temps de réaction pour les problèmes de maximum 48h",
+      "1 sauvegarde de données par mois",
+      "1 mise à jour active par mois (site, base de données, système, correctifs de bugs, améliorations des performances)"
+    ],
+    "Catégorie": "forfait"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2f527b109da448161a4"
+    },
+    "Nom": "Entreprise",
+    "Contenu": {
+      "6821b26427b109da4481619a": 100,
+      "6821b2ee27b109da448161a2": 75
+    },
+    "Catégorie": "offre"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2f527b109da448161a5"
+    },
+    "Nom": "Logiciel",
+    "Contenu": {
+      "6821b26427b109da4481619a": 100,
+      "6821b26427b109da4481619b": 100,
+      "6821b2ee27b109da448161a2": 75,
+      "6821b2ee27b109da448161a0": 75
+    },
+    "Catégorie": "offre"
+  },
+  {
+    "_id": {
+      "$oid": "6821b2f527b109da448161a3"
+    },
+    "Nom": "Perso",
+    "Contenu": {
+      "6821b26427b109da44816199": 100,
+      "6821b2ee27b109da448161a1": 75
+    },
+    "Catégorie": "offre"
+  }
+]

@@ -36,11 +36,31 @@
   width: fit-content;
 }
 
+
+.showcase-card {
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--on-background-hue-2);
+    border-radius: 20px;
+    width: var(--project-card-width);
+    border: 5px solid var(--on-background-hue-2);
+    height: fit-content;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      background-color: var(--on-background-hue-3);
+      border-color: var(--on-background-hue-3);
+      transform: translate(2px, -2px);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
 body {
-  background-color: var(--main-background-hue);
   font-family: "Nunito", sans-serif;
   width: calc(100vw - 10%);
-  margin: 0% 5% 50px 5%;
+  padding: 0% 5% 50px 5%;
+  margin: 0;
   overflow-x: hidden;
 }
 

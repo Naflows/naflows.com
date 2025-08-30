@@ -11,13 +11,13 @@ export const AppHeader = () => {
                 <nav className="header-nav">
                     <ul>
                         <li>
-                            <a href="./">Accueil</a>
+                            <a href="/">Accueil</a>
                         </li>
                         <li>
-                            <a href="./about">À propos</a>
+                            <a href="/about">À propos</a>
                         </li>
                         <li>
-                            <a href="./showcase">Showcase</a>
+                            <a href="/showcase">Showcase</a>
                         </li>
                     </ul>
                 </nav>

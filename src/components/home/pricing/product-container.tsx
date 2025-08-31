@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { ProductProps } from "../../../interface-types/interface/product";
 
-function hexToRgba(hex: string, alpha: number) {
+export function hexToRgba(hex: string, alpha: number) {
   // Remove the # if present
   hex = hex.replace(/^#/, "");
 
@@ -72,15 +72,17 @@ const ProductContainer = ({
   }, []);
 
   return (
-    <div className="pricing-global__container__content__product showcase-card">
+    <div
+      className="pricing-global__container__content__product showcase-card"
+      style={{
+        background: `linear-gradient(45deg, ${product["Hue"]} 0%, ${hexToRgba(
+          product["Hue"],
+          0.75
+        )} 100%)`,
+      }}
+    >
       <div
         className="pricing-global__title"
-        style={{
-          background: `linear-gradient(45deg, ${product["Hue"]} 0%, ${hexToRgba(
-            product["Hue"],
-            0.75
-          )} 100%)`,
-        }}
         onClick={() => {
           setDisplayBody(!displayBody);
         }}
@@ -95,32 +97,9 @@ const ProductContainer = ({
             </div>
           </div>
         </div>
-        <svg
-          viewBox="0 0 100 100"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="pricing-global__title__icon"
-            style={{
-                transform: "rotate(-90deg)",
-            }}
-        >
-          <path
-            d="M7.68821 31.3801C4.74645 28.1736 7.02107 23 11.3726 23H88.6274C92.9789 23 95.2535 28.1736 92.3118 31.3802L53.6844 73.484C51.7029 75.6438 48.2971 75.6438 46.3156 73.484L7.68821 31.3801Z"
-            fill="white"
-          />
-        </svg>
       </div>
 
-      <div
-        className="pricing-global__body"
-        style={{
-          height: displayBody ? initialHeight + "px" : 0,
-          marginTop: displayBody ? 30 : 0,
-          overflow: "hidden",
-          transition: "height 0.3s ease-in-out",
-        }}
-        ref={ref}
-      >
+      <div className="pricing-global__body">
         <div className="pricing-global_included">
           <h4>Ce qui est inclus, au minimum</h4>
           <ul>

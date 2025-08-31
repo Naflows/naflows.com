@@ -10,10 +10,10 @@ const AppFooter = () => {
             </div>
 
             <div className='footer-links'>
-                <a href="/about">À propos</a>
-                <a href="/legal">Informations légales</a>
-                <a href="/legal">Politique de confidentialité</a>
-                <a href="/contact">Contact</a>
+                <a className='link__text' href="/about">À propos</a>
+                <a className='link__text' href="/legal">Informations légales</a>
+                <a className='link__text' href="/legal">Politique de confidentialité</a>
+                <a className='link__text' href="/contact">Contact</a>
             </div>
         </footer>
     );

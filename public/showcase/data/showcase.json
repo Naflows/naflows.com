@@ -11,8 +11,8 @@
     },
     {
         "id" : 2,
-        "name" : "Concept visuel du site de NAFLOWS",
-        "description" : "Ce projet est un design concept pour le site web de NAFLOWS, et la première étape du développement de son site web. NAFLOWS se base d'abord sur des maquettes avant de développer ses services et produits.",
+        "name" : "Concept visuel du site de Naflows",
+        "description" : "Ce projet est un design concept pour le site web de Naflows, et la première étape du développement de son site web. Naflows se base d'abord sur des maquettes avant de développer ses services et produits.",
         "type" : "design",
         "technologies" : ["Figma", "React"],
         "banner" : "/public/showcase/banners/naflows-banner.png",

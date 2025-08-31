@@ -29,7 +29,10 @@ const ShowCase = () => {
     async function getData() {
       const d = await fetchData();
       // Sort data by yearRange
-      d.sort((b: { yearRange: Array<number> }, a: { yearRange: Array<number> }) => Math.min(...a.yearRange) - Math.min(...b.yearRange));
+      d.sort(
+        (b: { yearRange: Array<number> }, a: { yearRange: Array<number> }) =>
+          Math.min(...a.yearRange) - Math.min(...b.yearRange)
+      );
       setShowcaseData(d);
     }
     getData();
@@ -50,9 +53,9 @@ const ShowCase = () => {
           <>
             <span>
               Naflows apporte flexibilité, originalité, et créativité à vos
-              projets, tout en s'adaptant à vos besoins spécifiques.<br/> Cliquer sur un projet l'ouvrira dans un nouvel onglet.
+              projets, tout en s'adaptant à vos besoins spécifiques.
+              <br /> Cliquer sur un projet l'ouvrira dans un nouvel onglet.
             </span>
-           
           </>
         }
       />
@@ -61,9 +64,12 @@ const ShowCase = () => {
         {showcaseData &&
           showcaseData.map((data) => {
             return (
-              <div className="project-card" onClick={() => {
-                window.open(data.link, "_blank");
-              }}>
+              <div
+                className="project-card"
+                onClick={() => {
+                  window.open(data.link, "_blank");
+                }}
+              >
                 <span
                   className="project-type"
                   style={{
@@ -95,18 +101,22 @@ const ShowCase = () => {
           })}
       </div>
 
-
-      <TitleContainer
-        titleComponent={
+      <div className="global-additional_content">
+        <div className="outline-bar"></div>
+        <TitleContainer
+          titleComponent={<>Découvrez plus de projets</>}
+          descriptionComponent={
             <>
-                Découvrez plus de projets 
+              L'ensemble des projets réalisées par Naflows et Naflouille
+              Creations sont trouvables sur{" "}
+              <a href="https://archives.naflows.com">
+                https://archives.naflows.com
+              </a>
+              .
             </>
-        }
-        descriptionComponent={
-            <>
-                L'ensemble des projets réalisées par Naflows et Naflouille Creations sont trouvables sur <a href="https://archives.naflows.com">https://archives.naflows.com</a>.
-            </>
-        }/>
+          }
+        />
+      </div>
     </>
   );
 };

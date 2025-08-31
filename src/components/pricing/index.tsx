@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { fetchPrices } from "../home/pricing";
 import TitleContainer from "../main/title-container";
 import type { ForfaitProps } from "../../interface-types/interface/forfait";
 import PricingComponent from "./pricing-component";
@@ -8,6 +7,7 @@ import BasketComponent from "./basket/basket-component";
 import type { ProductProps } from "../../interface-types/interface/product";
 import type { OfferProps } from "../../interface-types/interface/offer";
 import { useUpdateLink } from "./controlers/_useUpdateLink";
+import fetchPrices from "../home/pricing/fetch-pricing";
 
 const PricingPage = () => {
     const [displayedForfait, setDisplayedForfait] = useState<string>("");

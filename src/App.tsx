@@ -1,44 +1,142 @@
 import "./App.css";
 import Pricing from "./components/home/pricing";
+import AdvantageCard from "./components/main/home/advantage-card";
 import TitleContainer from "./components/main/title-container";
 
 function App() {
   return (
     <>
-      <TitleContainer
-        titleComponent={
-          <>
-            <span>
-              Vous avez des <span id="colorful">besoins</span>.
-            </span>
-            <span>
-              Naflows a des <span id="colorful">solutions</span>.
-            </span>
-          </>
-        }
-        descriptionComponent={
-          <>
-            Chaque offre de Naflows a été pensée pour proposer des produits et
-            des solutions au <span id="colorful">meilleur prix</span> pour une{" "}
-            <span id="colorful">qualité supérieure</span> et un{" "}
-            <span id="colorful">engagement</span> sans faille.
-          </>
-        }
-      />
-      <Pricing />
+      <div className="global__welcome__screen">
+        <div className="global-welcome__screen__head">
+          <TitleContainer
+            titleComponent={
+              <>
+                <span>
+                  Vous avez des <span id="colorful">besoins</span>.
+                </span>
+                <span>
+                  Naflows a des <span id="colorful">solutions</span>.
+                </span>
+              </>
+            }
+            descriptionComponent={
+              <>
+                Chaque offre de Naflows a été pensée pour proposer des produits
+                et des solutions au <span id="colorful">meilleur prix</span>{" "}
+                pour une <span id="colorful">qualité supérieure</span> et un{" "}
+                <span id="colorful">engagement</span> sans faille.
+              </>
+            }
+          />
+
+          <div className="global-welcome__screen__head__advantages">
+            <div className="global__container__title">
+              <h2>
+                Les avantages de travailler avec nous
+              </h2>
+            </div>
+            <div className="advantages__cards">
+              <AdvantageCard
+                description="[2026] Naflows utilise son propre système de sécurité pour garantir la protection des données de ses clients, ainsi que la modularité de ses solutions."
+                svg={
+                  <>
+                    <svg
+                      width="100"
+                      height="100"
+                      viewBox="0 0 100 100"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M81 0C86.5229 1.28852e-07 91 4.47715 91 10V67.6113C91 70.9749 89.3091 74.1139 86.5 75.9639L55.5 96.3779C52.1627 98.5757 47.8373 98.5757 44.5 96.3779L13.5 75.9639C10.6909 74.1139 9 70.9749 9 67.6113V10C9 4.47715 13.4772 1.28852e-07 19 0H81ZM49.7998 26C44.3619 26.0001 39.9188 30.2557 39.6172 35.6182C37.5878 35.8109 36.0002 37.5198 36 39.5996V58C36 60.2091 37.7909 62 40 62H60C62.2091 62 64 60.2091 64 58V39.5996C63.9998 37.3907 62.209 35.5996 60 35.5996H59.9805C59.6696 30.2458 55.2315 26 49.7998 26ZM49.7998 28.4004C53.8088 28.4004 57.0713 31.6193 57.1943 35.5996H42.4053C42.5283 31.6193 45.7909 28.4005 49.7998 28.4004Z"
+                        fill="#3E4DED"
+                      />
+                    </svg>
+                  </>
+                }
+                title="Une sensibilisation à la sécurité"
+              />
+
+              <AdvantageCard
+                svg={
+                  <svg
+                    width="100"
+                    height="100"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_255_25"
+                      style={{
+                        maskType: "alpha",
+                      }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="100"
+                    >
+                      <rect width="100" height="100" rx="50" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_255_25)">
+                      <path
+                        d="M0 100.5C0 77.5802 18.5802 59 41.5 59H58.5C81.4198 59 100 77.5802 100 100.5H0Z"
+                        fill="#3E4DED"
+                      />
+                      <rect
+                        x="25"
+                        y="4"
+                        width="50"
+                        height="50"
+                        rx="25"
+                        fill="#3E4DED"
+                      />
+                    </g>
+                  </svg>
+                }
+                title="Une écoute attentive et un conseil personnalisé"
+                description="Nous prenons le temps de comprendre vos besoins et de vous offrir des conseils adaptés, au travers d'échanges et de retours d'expérience."
+              />
+
+              <AdvantageCard
+                svg={
+                  <svg
+                    width="100"
+                    height="100"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M95 19C97.7614 19 100 21.2386 100 24V76C100 78.7614 97.7614 81 95 81H5C2.23858 81 0 78.7614 0 76V24C0 21.2386 2.23858 19 5 19H95ZM29.4805 34.4404C27.5606 34.4404 25.8536 34.8665 24.3604 35.7197C22.8937 36.5731 21.6797 37.8138 20.7197 39.4404C19.8654 40.8644 19.2654 42.5842 18.918 44.5996H15.7998C15.4532 44.5997 15.1599 44.72 14.9199 44.96C14.68 45.1733 14.5596 45.4666 14.5596 45.8398C14.5596 46.1598 14.6801 46.4397 14.9199 46.6797C15.1599 46.9196 15.4532 47.04 15.7998 47.04H18.6426C18.6093 47.5842 18.5789 48.184 18.5596 48.8398C18.5596 49.502 18.5823 50.1287 18.625 50.7197H15.7998C15.4532 50.7198 15.1599 50.8401 14.9199 51.0801C14.68 51.2934 14.5596 51.5733 14.5596 51.9199C14.5596 52.2665 14.68 52.5598 14.9199 52.7998C15.1599 53.0398 15.4532 53.1601 15.7998 53.1602H18.9121C19.2587 55.171 19.8607 56.9047 20.7197 58.3604C21.6797 59.9869 22.8937 61.2268 24.3604 62.0801C25.8536 62.9333 27.5606 63.3604 29.4805 63.3604C30.8935 63.3603 32.2398 63.1195 33.5195 62.6396C34.7994 62.1597 35.9066 61.4136 36.8398 60.4004C37.1065 60.1604 37.267 59.8929 37.3203 59.5996C37.3735 59.3064 37.3468 59.0397 37.2402 58.7998C37.1602 58.5599 37.0131 58.3602 36.7998 58.2002C36.5865 58.0402 36.3333 57.9733 36.04 58C35.7734 58.0267 35.4802 58.1604 35.1602 58.4004C34.3335 59.1737 33.4796 59.7067 32.5996 60C31.7197 60.2933 30.7596 60.4404 29.7197 60.4404C28.4132 60.4404 27.2401 60.1596 26.2002 59.5996C25.1602 59.0129 24.2929 58.1333 23.5996 56.96C23.0154 55.9084 22.5748 54.6417 22.2773 53.1602H28C28.3467 53.1602 28.6265 53.0398 28.8398 52.7998C29.0798 52.5598 29.2002 52.2666 29.2002 51.9199C29.2002 51.6 29.0798 51.3201 28.8398 51.0801C28.6265 50.8401 28.3466 50.7197 28 50.7197H21.9873C21.9427 50.117 21.9199 49.4769 21.9199 48.7998C21.9199 48.1519 21.9416 47.5654 21.9824 47.04H28C28.3467 47.04 28.6265 46.9197 28.8398 46.6797C29.0798 46.4397 29.2002 46.1598 29.2002 45.8398C29.2002 45.4932 29.0798 45.1999 28.8398 44.96C28.6265 44.72 28.3466 44.5996 28 44.5996H22.2773C22.5749 43.1212 23.0155 41.8679 23.5996 40.8398C24.2929 39.6665 25.1602 38.8002 26.2002 38.2402C27.2401 37.6536 28.4132 37.3604 29.7197 37.3604C30.7329 37.3604 31.6931 37.5199 32.5996 37.8398C33.5329 38.1332 34.3735 38.6537 35.1201 39.4004C35.44 39.6669 35.7468 39.8132 36.04 39.8398C36.3334 39.8665 36.5865 39.7996 36.7998 39.6396C37.0131 39.4797 37.1602 39.28 37.2402 39.04C37.3335 38.8068 37.3552 38.5632 37.3057 38.3096L37.2549 38.0908C37.1849 37.837 37.0331 37.5937 36.7998 37.3604C35.8399 36.3205 34.7336 35.5735 33.4805 35.1201C32.2273 34.6668 30.8936 34.4405 29.4805 34.4404ZM49.6641 34.4404C48.1442 34.4405 46.6645 34.6802 45.2246 35.1602C43.7847 35.6401 42.5315 36.3336 41.4648 37.2402C41.1182 37.5069 40.8908 37.8001 40.7842 38.1201C40.6776 38.4134 40.6642 38.7067 40.7441 39C40.8508 39.2933 40.9979 39.5331 41.1846 39.7197C41.3979 39.8797 41.651 39.9733 41.9443 40C42.2643 40 42.5843 39.8796 42.9043 39.6396C43.9443 38.813 44.9978 38.2265 46.0645 37.8799C47.1311 37.5332 48.2649 37.3604 49.4648 37.3604C51.2777 37.3604 52.6641 37.7599 53.624 38.5596C54.584 39.3329 55.0644 40.4666 55.0645 41.96C55.0645 43.0798 54.8246 44.0399 54.3447 44.8398C53.8648 45.6131 53.1845 46.213 52.3047 46.6396C51.4514 47.0663 50.4112 47.2803 49.1846 47.2803H46.624C46.1178 47.2803 45.7314 47.4133 45.4648 47.6797C45.1982 47.9196 45.0645 48.2532 45.0645 48.6797C45.0645 49.133 45.1982 49.4931 45.4648 49.7598C45.7314 49.9996 46.1176 50.1201 46.624 50.1201H49.4648C51.5446 50.1202 53.1314 50.5471 54.2246 51.4004C55.3177 52.2537 55.8643 53.507 55.8643 55.1602C55.8642 56.3067 55.6245 57.2801 55.1445 58.0801C54.6645 58.8534 53.9577 59.4398 53.0244 59.8398C52.0911 60.2398 50.944 60.4404 49.584 60.4404C48.3308 60.4404 47.1175 60.2666 45.9443 59.9199C44.7712 59.5733 43.598 59.0134 42.4248 58.2402C42.0516 58.0003 41.7047 57.8934 41.3848 57.9199C41.0914 57.9466 40.8374 58.0669 40.624 58.2803C40.4109 58.4669 40.2645 58.7068 40.1846 59C40.1312 59.2667 40.158 59.5599 40.2646 59.8799C40.3713 60.1732 40.5978 60.4397 40.9443 60.6797C42.091 61.5597 43.4377 62.2264 44.9844 62.6797C46.5576 63.133 48.1175 63.3603 49.6641 63.3604C51.6372 63.3604 53.3309 63.0403 54.7441 62.4004C56.1575 61.7337 57.2377 60.813 57.9844 59.6396C58.7575 58.4398 59.1445 57.0268 59.1445 55.4004C59.1445 53.4804 58.5972 51.893 57.5039 50.6396C56.5945 49.5486 55.3652 48.8075 53.8164 48.4141C54.5809 48.125 55.2505 47.7347 55.8242 47.2402C56.6242 46.5736 57.2374 45.7732 57.6641 44.8398C58.1174 43.8798 58.3447 42.8264 58.3447 41.6797C58.3447 40.1598 57.998 38.8664 57.3047 37.7998C56.6114 36.7066 55.6112 35.8803 54.3047 35.3203C53.0247 34.7336 51.4774 34.4404 49.6641 34.4404ZM73.9688 34.4404C71.8354 34.4404 70.0217 34.9867 68.5283 36.0801C67.0618 37.1734 65.9556 38.8002 65.209 40.96C64.4623 43.0933 64.0889 45.7333 64.0889 48.8799C64.0889 53.573 64.9286 57.1597 66.6084 59.6396C68.2884 62.1196 70.7421 63.3604 73.9688 63.3604C76.1288 63.3604 77.9425 62.8131 79.4092 61.7197C80.8756 60.5997 81.9819 58.9596 82.7285 56.7998C83.4752 54.6398 83.8486 51.9865 83.8486 48.8398C83.8486 44.1201 83.009 40.5468 81.3291 38.1201C79.6758 35.6668 77.2221 34.4404 73.9688 34.4404ZM73.9688 37.2803C76.2087 37.2803 77.862 38.2134 78.9287 40.0801C80.022 41.9201 80.5683 44.84 80.5684 48.8398C80.5684 52.813 80.022 55.7597 78.9287 57.6797C77.862 59.573 76.2087 60.5195 73.9688 60.5195C71.7554 60.5195 70.1021 59.573 69.0088 57.6797C67.9155 55.7597 67.3691 52.813 67.3691 48.8398C67.3692 44.8666 67.9155 41.9467 69.0088 40.0801C70.1021 38.2134 71.7554 37.2803 73.9688 37.2803Z"
+                      fill="#3E4DED"
+                    />
+                  </svg>
+                }
+                title="Un tarif compétitif"
+                description="A seulement 30€ de l'heure, notre taux horaire assure un service abordable pour tous, sans compromettre la qualité de nos prestations."
+              />
+            </div>
+          </div>
+        </div>
+        <Pricing />
+      </div>
 
       <div className="global__process_description global__container">
+
         <div className="global__container__title">
-          <h2>Nos solutions</h2>
+          <h2>Notre processus de développement</h2>
           <p>
-            Les prix affichés correspondent aux tarifs minimums. Le coût final
-            dépendra de vos besoins spécifiques et fera l’objet d’un devis
-            personnalisé, que vous serez libre d’accepter.
+            Dans l'objectif de vous fournir un suivi{" "}
+            <span id="colorful">personnalisé</span> et adapté à vos besoins,
+            nous avons mis en place un processus de développement en plusieurs
+            étapes.
           </p>
         </div>
         <img
           src="/public/assets/process-diagram.svg"
-          alt="Le processus de fonctionnement des commandes chez NAFLOWS."
+          alt="Le processus de fonctionnement des commandes chez Naflows."
           className="process-diagram"
         />
       </div>
@@ -54,26 +152,22 @@ function App() {
           </p>
         </div>
         <div className="promotion__buttons">
-            <a
+          <a
             href="#"
-            
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               window.scrollTo({
-              top: 0,
-              behavior: "smooth"
+                top: 0,
+                behavior: "smooth",
               });
             }}
             className=" action-button primary-button"
-            >
+          >
             Voir les produits
-            </a>
-            <a
-            href="/contact"
-            className=" action-button secondary-button"
-            >
+          </a>
+          <a href="/contact" className=" action-button secondary-button">
             <span>Contactez-nous</span>
-            </a>
+          </a>
         </div>
       </div>
     </>

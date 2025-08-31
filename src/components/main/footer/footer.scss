@@ -19,14 +19,5 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      color : var(--primary-hue-1);
-      font-weight: bold;
-      &:hover {
-        color: var(--primary-hue-2);
-      }
-    }
   }
 }

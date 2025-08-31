@@ -25,7 +25,6 @@
   --order-delivery: #8b5cf6;
 }
 
-
 .warning__informational__box {
   background-color: var(--error-hue-lighter);
   border: 1px solid var(--warning-hue);
@@ -36,18 +35,102 @@
   width: fit-content;
 }
 
+.global-additional_content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  min-height: 40px;
+  .outline-bar {
+    width: 5px;
+    min-height: 100%;
+    border-radius: 50px;
+    background-color: var(--primary-hue-2);
+  }
+}
+
+.showcase-card {
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--on-background-hue-2);
+  border-radius: 20px;
+  width: var(--project-card-width);
+  border: 5px solid var(--on-background-hue-2);
+  height: fit-content;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    background-color: var(--on-background-hue-3);
+    border-color: var(--on-background-hue-3);
+    transform: translate(2px, -2px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.link__text {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-hue-1);
+  font-weight: bold;
+  &:hover {
+    color: var(--primary-hue-2);
+  }
+}
+
 body {
-  background-color: var(--main-background-hue);
   font-family: "Nunito", sans-serif;
   width: calc(100vw - 10%);
-  margin: 0% 5% 50px 5%;
+  padding: 0% 5% 50px 5%;
+  margin: 0;
   overflow-x: hidden;
 }
 
 #root {
+  padding-top: calc(120px);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
+
+  .global__welcome__screen {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    height: 80vh;
+    align-items: end;
+    justify-content: space-between;
+    .global-welcome__screen__head {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      height: 100%;
+      gap: 50px;
+      .global-welcome__screen__head__advantages {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .advantages__cards {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          .advantages__card {
+            background-color: var(--on-background-hue);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            height: fit-content;
+            flex-direction: column;
+            gap: 10px;
+            svg {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #colorful {
@@ -77,12 +160,10 @@ body {
   }
 }
 
-
-
 .global__container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
 }
 
 .promotion__container {
@@ -169,6 +250,3 @@ body {
     color: var(--primary-hue-2);
   }
 }
-
-
-

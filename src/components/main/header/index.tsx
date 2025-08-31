@@ -6,7 +6,7 @@ export const AppHeader = () => {
         <header>
             <div className="header-left-part">
                 <a href="./" className="header-left-part__logo">
-                    <img src="../../../../public/assets/naflows_small_logotype.png" alt="Logo de NAFLOWS" />
+                    <img src="../../../../public/assets/naflows_small_logotype.png" alt="Logo de Naflows" />
                 </a>
                 <nav className="header-nav">
                     <ul>

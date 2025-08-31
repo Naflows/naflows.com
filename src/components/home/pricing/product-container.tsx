@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import type { ProductProps } from "../../../interface-types/interface/product";
 
 export function hexToRgba(hex: string, alpha: number) {
@@ -45,31 +44,12 @@ const ProductContainer = ({
   setShake: React.Dispatch<React.SetStateAction<boolean>>;
   setForceURLUpdate: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
 
-  const [initialHeight, setInitialHeight] = useState<number | null>(null);
-  const [displayBody, setDisplayBody] = useState<boolean>(true);
 
-  useEffect(() => {
-    if (ref.current) {
-      setInitialHeight(ref.current.clientHeight);
-      setDisplayBody(false);
-    }
-  }, []);
 
-  // On resize
-  const handleResize = () => {
-    if (ref.current) {
-      setInitialHeight(ref.current.clientHeight);
-    }
-  };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+
+
 
   return (
     <div
@@ -83,9 +63,6 @@ const ProductContainer = ({
     >
       <div
         className="pricing-global__title"
-        onClick={() => {
-          setDisplayBody(!displayBody);
-        }}
       >
         <div className="pricing-global__title__content">
           <p>{product["Phrase d'accroche"]}</p>

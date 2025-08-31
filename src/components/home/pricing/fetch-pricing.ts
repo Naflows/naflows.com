@@ -12,7 +12,7 @@ export async function fetchPrices(
         >
     >,
     setSelectedProductToDisplay?: React.Dispatch<
-        React.SetStateAction<ProductProps["product"] | null>
+        React.SetStateAction<ProductProps["product"] | undefined>
     >
 ) {
     try {

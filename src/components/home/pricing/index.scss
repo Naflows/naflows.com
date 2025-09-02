@@ -317,11 +317,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .pricing-global__container__content {
-    flex-direction: column !important;
-    .pricing-global__container__content__product {
-      width: calc(100% - 40px) !important;
-    }
-  }
-}

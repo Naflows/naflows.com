@@ -250,3 +250,66 @@ body {
     color: var(--primary-hue-2);
   }
 }
+
+
+
+
+@media (max-width: 1000px) {
+  body {
+    height: 100vh;
+    overflow-y: auto !important;
+  }
+  #root {
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto !important;
+    height: fit-content;
+    .global__welcome__screen {
+      height: fit-content;
+      flex-direction: column;
+      .global-welcome__screen__head {
+        width: 100%;
+        .global-welcome__screen__head__advantages {
+          width: 100%;
+          .advantages__cards {
+            flex-direction: column;
+
+          }
+        }
+      }
+    }
+
+    .pricing-global__container {
+      width: 100%;
+      flex-direction: column;
+      .pricing-global__container__content  {
+        width: 100%;
+        .pricing-global__container__content__product {
+          width: 100%;
+
+          .pricing-global_included, .pricing-global_about, .pricing-global_targets {
+            padding: 0;
+          }
+        }
+      }
+
+      .global-product__picker__items {
+        flex-direction: row;
+        border-radius: 15px;
+        width: calc(100% - 20px);
+        gap: 0px;
+        align-items: center;
+        .global-product__picker__item  {
+          text-align: center;
+        }
+      }
+    }
+
+    .global__process_description, .promotion__container {
+      height: fit-content;
+    }
+
+    
+  }
+
+}

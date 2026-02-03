@@ -1,0 +1,10 @@
+{
+    "FR" : {
+        "welcome-description" : "Développeur Fullstack et Designer UI/UX ",
+        "welcome-title" : "Naflows, de Mougel David"
+    },
+    "EN" : {
+        "welcome-description" : "Fullstack Developer and UI/UX Designer",
+        "welcome-title" : "Naflows, by David Mougel"
+    }
+}

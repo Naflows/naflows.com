@@ -1,10 +1,56 @@
 {
-    "FR" : {
-        "welcome-description" : "Développeur Fullstack et Designer UI/UX ",
-        "welcome-title" : "Naflows, de Mougel David"
+    "FR": {
+        "welcome-description": "Développeur Fullstack et Designer UI/UX ",
+        "welcome-title": "NAFLOWS, de Mougel David",
+        "switch-lang": "Changer de langue",
+        "lang": "FR",
+        "learn-more": {
+            "title": "En savoir plus",
+            "links": [
+                {
+                    "name": "Mes ambitions et valeurs",
+                    "url": "/about-me"
+                },
+                {
+                    "name": "Mon parcours",
+                    "url": "/skills"
+                },
+                {
+                    "name": "Devblog",
+                    "url": "/projects"
+                },
+                {
+                    "name": "Ko-Fi",
+                    "url": "https://ko-fi.com/naflouille"
+                }
+            ]
+        }
     },
-    "EN" : {
-        "welcome-description" : "Fullstack Developer and UI/UX Designer",
-        "welcome-title" : "Naflows, by David Mougel"
+    "EN": {
+        "welcome-description": "Fullstack Developer and UI/UX Designer",
+        "welcome-title": "NAFLOWS, by David Mougel",
+        "lang": "EN",
+        "switch-lang": "Switch language",
+        "learn-more": {
+            "title": "Learn more",
+            "links": [
+                {
+                    "name": "My ambitions and values",
+                    "url": "/about-me"
+                },
+                {
+                    "name": "My journey",
+                    "url": "/skills"
+                },
+                {
+                    "name": "Devblog",
+                    "url": "/projects"
+                },
+                {
+                    "name": "Ko-Fi",
+                    "url": "https://ko-fi.com/naflouille"
+                }
+            ]
+        }
     }
 }

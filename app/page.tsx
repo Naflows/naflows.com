@@ -1,9 +1,62 @@
 "use client";
 import { useTranslate } from "./layout";
-import Links from "./public/data/links.json";
-import NAFLOWS_LOGOTYPE from "./public/assets/naflows.svg";
+import Links from "@/public/data/links.json";
 import Image from "next/image";
-import MOUGELDavid from "./public/assets/md.jpg";
+import MOUGELDavid from "@/public/assets/md.jpg";
+import LearnMore from "./components/learn-more";
+import { JSX } from "react/jsx-dev-runtime";
+
+function Card({
+  name,
+  content,
+  action,
+  class: className
+}: {
+  name: string;
+  content: string;
+  action: {
+    type: "link" | "download";
+    url: string;
+    name: string;
+  },
+  class?: string;
+}): JSX.Element {
+  return (
+    <div className={`card ${className}`}>
+      <div className="card__header">
+        <div className="header__main">
+          <div className="card__name">{name}</div>
+        </div>
+        <div className="card__content">{content}</div>
+      </div>
+
+      <div className="card__action">
+        {action.type === "link" ? (
+          <a
+            href={action.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card__action__link"
+          >
+            {action.name}
+          </a>
+        ) : (
+          <a
+            href={action.url}
+            download
+            className="card__action__link"
+          >
+            <span>
+              {action.name}
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M465-339.5q-7-2.5-13-8.5L308-492q-12-12-11.5-28t11.5-28q12-12 28.5-12.5T365-549l75 75v-286q0-17 11.5-28.5T480-800q17 0 28.5 11.5T520-760v286l75-75q12-12 28.5-11.5T652-548q11 12 11.5 28T652-492L508-348q-6 6-13 8.5t-15 2.5q-8 0-15-2.5ZM240-160q-33 0-56.5-23.5T160-240v-80q0-17 11.5-28.5T200-360q17 0 28.5 11.5T240-320v80h480v-80q0-17 11.5-28.5T760-360q17 0 28.5 11.5T800-320v80q0 33-23.5 56.5T720-160H240Z" /></svg>
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
 
 export default function Home() {
   const { translate } = useTranslate();
@@ -11,7 +64,15 @@ export default function Home() {
   return (
     <div className="main">
 
+      <div className="header__content">
 
+        <Card
+          name={translate ? translate["cards"]["cv"]["title"] : "Loading..."}
+          content={translate ? translate["cards"]["cv"]["description"] : "Loading..."}
+          action={{ type: "download", url: `/files/cv_${translate ? translate["lang"] : "EN"}.pdf`, name: translate ? translate["cards"]["cv"]["actionName"] : "Loading..." }}
+          class="mx-250"
+        />
+      </div>
 
 
 
@@ -51,41 +112,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="about__content">
-            <h2>{translate ? translate["learn-more"]["title"] : "Loading..."}</h2>
-            <div className="about__content__links">
-              {translate["learn-more"]["links"].map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="about__content__link"
-                >
-                  {link.name}
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M646-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h446L532-634q-12-12-11.5-28t11.5-28q12-12 28.5-12.5T589-691l183 183q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L589-269q-12 12-28.5 11.5T532-270q-11-12-11.5-28t11.5-28l114-114Z" /></svg>
-                </a>
-              ))}
-            </div>
-          </div>
+          <LearnMore translate={translate} />
 
 
 
         </div>
 
 
-          { /* Switch language button */}
-          <div className="language-switcher">
-            <button
-              onClick={() => {
-                const newLang = translate["lang"] === "EN" ? "FR" : "EN";
-                window.location.href = `/${newLang.toLowerCase()}`;
-              }}
-              className="language-switcher__button"
-            >
-              {translate ? translate["switch-lang"] : "Loading..."}
-            </button>
-          </div>
+
       </div>
     </div>
   );

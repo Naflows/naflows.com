@@ -1,0 +1,183 @@
+{
+    "FR": {
+        "welcome-description": "Développeur Fullstack et Designer UI/UX ",
+        "welcome-title": "NAFLOWS, de Mougel David",
+        "switch-lang": "Changer de langue",
+        "lang": "FR",
+        "cards": {
+            "cv": {
+                "title": "Mon CV",
+                "description": "Consultez mon CV en ligne pour découvrir mon parcours professionnel, mes compétences techniques et mes réalisations en développement web et design UI/UX.",
+                "actionName": " Télécharger mon CV"
+            }
+        },
+        "design": [
+            {
+                "name": "NASS Workflow",
+                "url": "files/NASS_Workflow.pdf",
+                "description": "Découvrez le workflow du projet NASS, un système avancé de SSO et de gestion d'accès pour les environnements cloud et locaux.",
+                "language" : "EN",
+                "files" : [
+                    { 
+                        "name" : ""
+                    }
+                ]
+            },
+            {
+                "name": "Naflows Commercial",
+                "description": "Découvrez les designs de Naflows en tant qu'entreprise commerciale offrant des services de développement et de design UI/UX.",
+                "language" : "EN",
+                "files" : [
+                    {
+                        "name" : "Suivi de commande",
+                        "url" : "files/design/Naflows_Commercial_Order_Tracking.pdf"
+                    },
+                    {
+                        "name" : "Dashboard Admin",
+                        "url" : "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                    },
+                    {
+                        "name": "Site Vitrine",
+                        "url": "files/design/Naflows_Commercial_Landing_Page.pdf"
+                    },
+                    {
+                        "name": "Portail de connexion",
+                        "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
+                    },
+                    {
+                        "name" : "Emails",
+                        "url" : "files/design/Naflows_Commercial_Emails.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Local Shops App",
+                "url": "files/Local_Shops_App.pdf",
+                "description": "Explorez les designs de l'application Local Shops, une plateforme visant à promouvoir les commerces locaux et à faciliter les achats de proximité.",
+                "language" : "FR",
+                "files" : [
+                    { 
+                        "name" : "Page d'accueil",
+                        "url" : "files/design/Local_Shops_App_Homepage.pdf"
+                    },
+                    {
+                        "name" : "Vérification du commerce",
+                        "url" : "files/design/Local_Shops_App_Business_Verification.pdf"
+                    },
+                    {
+                        "name" : "Composants UI",
+                        "url" : "files/design/Local_Shops_App_UI_Components.pdf"
+                    }
+                ]
+            }
+        ],
+        "learn-more": {
+            "title": "En savoir plus",
+            "links": [
+                {
+                    "name": "Mes ambitions et valeurs",
+                    "url": "/about-me"
+                },
+                {
+                    "name": "Mon parcours",
+                    "url": "/skills"
+                },
+                {
+                    "name": "Devblog",
+                    "url": "/projects"
+                },
+                {
+                    "name": "Ko-Fi",
+                    "url": "https://ko-fi.com/naflouille"
+                }
+            ]
+        }
+    },
+    "EN": {
+        "welcome-description": "Fullstack Developer and UI/UX Designer",
+        "welcome-title": "NAFLOWS, by David Mougel",
+        "lang": "EN",
+        "switch-lang": "Switch language",
+        "cards": {
+            "cv": {
+                "title": "My CV",
+                "description": "Check out my online CV to discover my professional background, technical skills, and achievements in web development and UI/UX design.",
+                "actionName": "Download my CV"
+            }
+        },
+        "design": [
+            {
+                "name": "NASS Workflow",
+                "description": "Discover the workflow of the NASS project, an advanced SSO and access management system for cloud and on-premises environments.",
+                "language" : "EN"
+            },
+            {
+                "name": "Naflows Commercial",
+                "description": "Explore the designs of Naflows as a commercial company offering development and UI/UX design services.",
+                "language" : "EN",
+                "files" : [
+                    {
+                        "name" : "Order Tracking",
+                        "url" : "files/design/Naflows_Commercial_Order_Tracking.pdf"
+                    },
+                    {
+                        "name" : "Admin Dashboard",
+                        "url" : "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                    },
+                    {
+                        "name": "Landing Page",
+                        "url": "files/design/Naflows_Commercial_Landing_Page.pdf"
+                    },
+                    {
+                        "name": "Login Portal",
+                        "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
+                    },
+                    {
+                        "name" : "Emails",
+                        "url" : "files/design/Naflows_Commercial_Emails.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Local Shops App",
+                "description": "Explore the designs of the Local Shops app, a platform aimed at promoting local businesses and facilitating neighborhood shopping.",
+                "language" : "FR",
+                "files" : [
+                    { 
+                        "name" : "Homepage",
+                        "url" : "files/design/Local_Shops_App_Homepage.pdf"
+                    },
+                    {
+                        "name" : "Business Verification",
+                        "url" : "files/design/Local_Shops_App_Business_Verification.pdf"
+                    },
+                    {
+                        "name" : "UI Components",
+                        "url" : "files/design/Local_Shops_App_UI_Components.pdf"
+                    }
+                ]
+            }
+        ],
+        "learn-more": {
+            "title": "Learn more",
+            "links": [
+                {
+                    "name": "My ambitions and values",
+                    "url": "/about-me"
+                },
+                {
+                    "name": "My journey",
+                    "url": "/skills"
+                },
+                {
+                    "name": "Devblog",
+                    "url": "/projects"
+                },
+                {
+                    "name": "Ko-Fi",
+                    "url": "https://ko-fi.com/naflouille"
+                }
+            ]
+        }
+    }
+}

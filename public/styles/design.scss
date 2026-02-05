@@ -1,0 +1,189 @@
+@import './variables.scss';
+
+.design__page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.design__header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $global-hue-2-100;
+    border-radius: 10px;
+    color: $global-hue-1-100;
+
+    h1,
+    p {
+        margin: 0;
+    }
+
+    .design__header__title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            color: $global-hue-75;
+        }
+    }
+
+    .design__header__history {
+        font-size: 14px;
+    }
+}
+
+
+.design__card__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+    .design__project {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 20px;
+        background-color: $global-hue-2-100;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        color: $global-hue-1-100;
+        align-self: stretch;
+
+        .design__project__description {
+            margin: 0;
+        }
+
+        .design__body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 200px;
+        }
+
+        .design__files {
+            display: flex;
+            gap: 5px;
+            font-weight: bold;
+            flex-direction: column;
+            padding-top: 20px;
+            border: 1px solid $global-hue-1-100;
+            border-style: solid none none none;
+
+            h5 {
+                margin: 0;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $global-hue-75;
+            }
+        }
+
+        .design__project__files {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .design__project__file {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px 10px;
+                background-color: $global-hue-1-100;
+                border: 1px solid $global-hue-1-100;
+                color: $global-hue-2-100;
+                border-radius: 20px;
+                text-decoration: unset;
+                justify-content: space-between;
+                transition: .3s ease;
+
+                span {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                svg {
+                    fill: $global-hue-2-100;
+                    width: 16px;
+                    height: 16px;
+                    min-width: 16px;
+                    min-height: 16px;
+                }
+
+                &:hover {
+                    background-color: $global-hue-2-100;
+                    color: $global-hue-1-100;
+                    border-radius: 5px;
+
+                    svg {
+                        fill: $global-hue-1-100;
+                    }
+                }
+            }
+
+
+        }
+
+        .design__project__head {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .design__project__name {
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .project__tags {
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+            }
+
+            .design__project__tag {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+                font-weight: bold;
+
+                svg {
+                    fill: $global-hue-1-100;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+    }
+}
+
+
+// RESPONSIVE
+@media (max-width: 700px) {
+    .design__card__content {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+
+        .design__project {
+            width: calc(100% - 40px);
+        }
+    }
+}

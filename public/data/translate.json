@@ -8,6 +8,8 @@
             "clients": "Besoin d'un développeur ou designer ?",
             "contactText": "Contactez-moi !"
         },
+        "requestDemo" : "Vous pouvez demander une démo !",
+        "projectLanguage" : "Ce projet est en anglais",
         "cards": {
             "cv": {
                 "title": "Mon CV",
@@ -33,66 +35,100 @@
                 "url": "https://archives.naflows.com"
             }
         },
-        "design": [
-            {
-                "name": "NASS Workflow",
-                "url": "files/NASS_Workflow.pdf",
-                "description": "Découvrez le workflow du projet NASS, un système avancé de SSO et de gestion d'accès pour les environnements cloud et locaux.",
-                "language": "EN",
-                "files": [
-                    {
-                        "name": ""
-                    }
-                ]
-            },
-            {
-                "name": "Naflows Commercial",
-                "description": "Découvrez les designs de Naflows en tant qu'entreprise commerciale offrant des services de développement et de design UI/UX.",
-                "language": "EN",
-                "files": [
-                    {
-                        "name": "Suivi de commande",
-                        "url": "files/design/Naflows_Commercial_Order_Tracking.pdf"
-                    },
-                    {
-                        "name": "Dashboard Admin",
-                        "url": "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
-                    },
-                    {
-                        "name": "Site Vitrine",
-                        "url": "files/design/Naflows_Commercial_Landing_Page.pdf"
-                    },
-                    {
-                        "name": "Portail de connexion",
-                        "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
-                    },
-                    {
-                        "name": "Emails",
-                        "url": "files/design/Naflows_Commercial_Emails.pdf"
-                    }
-                ]
-            },
-            {
-                "name": "Local Shops App",
-                "url": "files/Local_Shops_App.pdf",
-                "description": "Explorez les designs de l'application Local Shops, une plateforme visant à promouvoir les commerces locaux et à faciliter les achats de proximité.",
-                "language": "FR",
-                "files": [
-                    {
-                        "name": "Page d'accueil",
-                        "url": "files/design/Local_Shops_App_Homepage.pdf"
-                    },
-                    {
-                        "name": "Vérification du commerce",
-                        "url": "files/design/Local_Shops_App_Business_Verification.pdf"
-                    },
-                    {
-                        "name": "Composants UI",
-                        "url": "files/design/Local_Shops_App_UI_Components.pdf"
-                    }
-                ]
-            }
-        ],
+        "design": {
+            "files" : "Fichiers",
+            "title" : "Mes designs",
+            "description": "Découvrez une sélection de mes travaux de design UI/UX, mettant en avant ma créativité et mon expertise dans la création d'expériences utilisateur attrayantes et fonctionnelles.",
+            "history" : "J'ai commencé à m'intéresser au design UI/UX en 2022, en parallèle de mon activité de développeur: le frontend était fait pour moi. Je me suis formé de manière autodidacte, en m'inspirant de designs existants comme M3 de Google, et en expérimentant avec des outils comme Figma. J'ai rapidement développé une passion pour la création d'interfaces utilisateur intuitives et esthétiques, réfléchies et fonctionnelles, ce qui m'a conduit à intégrer le design dans mes projets professionnels et personnels.",
+            "content": [
+                {
+                    "name": "NASS Workflow",
+                    "url": "files/NASS_Workflow.pdf",
+                    "description": "Découvrez le workflow du projet NASS, un système avancé de SSO et de gestion d'accès pour les environnements cloud et locaux.",
+                    "developed" : true,
+                    "language": "EN",
+                    "files": [
+                        {
+                            "name": "Panneau de contrôle Administrateur NASS",
+                            "url": "/files/design/NASS_AdminPanel.pdf"
+                        },
+                        {
+                            "name" : "Application Fonctionnelle NASS",
+                            "url": "/files/design/NASS_App.pdf"
+                        },
+                        {
+                            "name" : "[Déprécié] Workflow Système De Protection NASS",
+                            "url": "/files/design/NASS_SystemFlowOutdated.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Requêtes de pompes",
+                    "description" : "Découvrez les designs de l'application de requêtes de pompes, une plateforme interactive pour suivre et analyser les performances des exercices de pompes.",
+                    "language": "FR",
+                    "developed" : false,
+                    "files" : [
+                        {
+                            "name" : "Composants de l'application",
+                            "url" : "/files/design/Pushups_App_Components.pdf"
+                        },
+                        {
+                            "name" : "Application globable",
+                            "url" : "/files/design/Pushups_App_Main.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name": "Naflows Commercial",
+                    "description": "Découvrez les designs de Naflows en tant qu'entreprise commerciale offrant des services de développement et de design UI/UX.",
+                    "language": "EN",
+                    "developed" : false,
+                    "files": [
+                        {
+                            "name": "Suivi de commande",
+                            "url": "/files/design/Naflows_Commercial_Order_Tracking.pdf"
+                        },
+                        {
+                            "name": "Dashboard Admin",
+                            "url": "/files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                        },
+                        {
+                            "name": "Site Vitrine",
+                            "url": "/files/design/Naflows_Commercial_Landing_Page.pdf"
+                        },
+                        {
+                            "name": "Portail de connexion",
+                            "url": "/files/design/Naflows_Commercial_Login_Portal.pdf"
+                        },
+                        {
+                            "name": "Emails",
+                            "url": "/files/design/Naflows_Commercial_Emails.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name": "Local Shops App",
+                    "url": "/files/Local_Shops_App.pdf",
+                    "description": "Explorez les designs de l'application Local Shops, une plateforme visant à promouvoir les commerces locaux et à faciliter les achats de proximité.",
+                    "developed" : false,
+                    "language": "FR",
+                    "files": [
+                        {
+                            "name": "Page d'accueil",
+                            "url": "/files/design/Local_Shops_App_Homepage.pdf"
+                        },
+                        {
+                            "name": "Vérification du commerce",
+                            "url": "/files/design/Local_Shops_App_Business_Verification.pdf"
+                        },
+                        {
+                            "name": "Composants UI",
+                            "url": "/files/design/Local_Shops_App_UI_Components.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
         "learn-more": {
             "title": "En savoir plus",
             "links": [
@@ -124,6 +160,8 @@
             "clients": "Looking for a developer or designer? ",
             "contactText": "Contact me!"
         },
+        "requestDemo" : "You can request a demo!",
+        "projectLanguage" : "This project is in English",
         "cards": {
             "cv": {
                 "title": "My CV",
@@ -147,61 +185,100 @@
                 "description": "Explore my archives of past projects, highlighting my development and design journey through a variety of achievements.",
                 "actionName": "See my archives",
                 "url": "https://archives.naflows.com"
-             }
-        },
-        "design": [
-            {
-                "name": "NASS Workflow",
-                "description": "Discover the workflow of the NASS project, an advanced SSO and access management system for cloud and on-premises environments.",
-                "language": "EN"
-            },
-            {
-                "name": "Naflows Commercial",
-                "description": "Explore the designs of Naflows as a commercial company offering development and UI/UX design services.",
-                "language": "EN",
-                "files": [
-                    {
-                        "name": "Order Tracking",
-                        "url": "files/design/Naflows_Commercial_Order_Tracking.pdf"
-                    },
-                    {
-                        "name": "Admin Dashboard",
-                        "url": "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
-                    },
-                    {
-                        "name": "Landing Page",
-                        "url": "files/design/Naflows_Commercial_Landing_Page.pdf"
-                    },
-                    {
-                        "name": "Login Portal",
-                        "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
-                    },
-                    {
-                        "name": "Emails",
-                        "url": "files/design/Naflows_Commercial_Emails.pdf"
-                    }
-                ]
-            },
-            {
-                "name": "Local Shops App",
-                "description": "Explore the designs of the Local Shops app, a platform aimed at promoting local businesses and facilitating neighborhood shopping.",
-                "language": "FR",
-                "files": [
-                    {
-                        "name": "Homepage",
-                        "url": "files/design/Local_Shops_App_Homepage.pdf"
-                    },
-                    {
-                        "name": "Business Verification",
-                        "url": "files/design/Local_Shops_App_Business_Verification.pdf"
-                    },
-                    {
-                        "name": "UI Components",
-                        "url": "files/design/Local_Shops_App_UI_Components.pdf"
-                    }
-                ]
             }
-        ],
+        },
+        "design": {
+            "title" : "My designs",
+            "files" : "Files",
+            "description": "Discover a selection of my UI/UX design works, showcasing my creativity and expertise in creating engaging and functional user experiences.",
+            "history" : "I started getting interested in UI/UX design in 2022, alongside my activity as a developer: frontend was made for me. I taught myself, drawing inspiration from existing designs like Google's M3, and experimenting with tools like Figma. I quickly developed a passion for creating intuitive and aesthetic user interfaces, thoughtful and functional, which led me to integrate design into my professional and personal projects.",
+            "content": [
+                {
+                    "name": "NASS Workflow",
+                    "description": "Discover the workflow of the NASS project, an advanced SSO and access management system for cloud and on-premises environments.",
+                    "language": "EN",
+                    "developed" : true,
+                    "files": [
+                        {
+                            "name": "NASS Admin Panel",
+                            "url": "/files/design/NASS_AdminPanel.pdf"
+                        },
+                        {
+                            "name" : "NASS Functional App",
+                            "url": "/files/design/NASS_App.pdf"
+                        },
+                        {
+                            "name" : "[Deprecated] NASS Protection System Workflow",
+                            "url": "/files/design/NASS_SystemFlowOutdated.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Pushups Requests",
+                    "description" : "Coach-student platform for issuing push-up challenges with video verification. Features include completion tracking, performance streaks, and progress objectives.",
+                    "language": "EN",
+                    "developed" : false,
+                    "files" : [
+                        {
+                            "name" : "UI Components",
+                            "url" : "/files/design/Pushups_App_Components.pdf"
+                        },
+                        {
+                            "name" : "Overall Application",
+                            "url" : "/files/design/Pushups_App_Main.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name": "Naflows Commercial",
+                    "description": "Explore the designs of Naflows as a commercial company offering development and UI/UX design services.",
+                    "language": "FR",
+                    "developed" : false,
+                    "files": [
+                        {
+                            "name": "Order Tracking",
+                            "url": "/files/design/Naflows_Commercial_Order_Tracking.pdf"
+                        },
+                        {
+                            "name": "Admin Dashboard",
+                            "url": "/files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                        },
+                        {
+                            "name": "Landing Page",
+                            "url": "/files/design/Naflows_Commercial_Landing_Page.pdf"
+                        },
+                        {
+                            "name": "Login Portal",
+                            "url": "/files/design/Naflows_Commercial_Login_Portal.pdf"
+                        },
+                        {
+                            "name": "Emails",
+                            "url": "/files/design/Naflows_Commercial_Emails.pdf"
+                        }
+                    ]
+                },
+                {
+                    "name": "Local Shops App",
+                    "description": "Explore the designs of the Local Shops app, a platform aimed at promoting local businesses and facilitating neighborhood shopping.",
+                    "language": "FR",
+                    "developed" : false,
+                    "files": [
+                        {
+                            "name": "Homepage",
+                            "url": "/files/design/Local_Shops_App_Homepage.pdf"
+                        },
+                        {
+                            "name": "Business Verification",
+                            "url": "/files/design/Local_Shops_App_Business_Verification.pdf"
+                        },
+                        {
+                            "name": "UI Components",
+                            "url": "/files/design/Local_Shops_App_UI_Components.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
         "learn-more": {
             "title": "Learn more",
             "links": [

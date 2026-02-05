@@ -35,6 +35,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     border: 1px solid $global-hue-2-100;
     border-style: solid none none none;
@@ -295,7 +296,7 @@ body {
             text-transform: uppercase;
             font-size: 20px;
             text-align: center;
-            gap: 50px;
+            gap: 5px;
 
             svg {
                 fill: $global-hue-2-100;
@@ -405,6 +406,15 @@ body {
 
         .language-switcher {
             justify-content: center;
+        }
+    }
+
+    .app__footer {
+        flex-direction: column;
+        gap: 30px;
+        .open__to__work {
+            width: 100%;
+            height: 50px;
         }
     }
 

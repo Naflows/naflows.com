@@ -4,6 +4,10 @@
         "welcome-title": "NAFLOWS, de Mougel David",
         "switch-lang": "Changer de langue",
         "lang": "FR",
+        "openToWork": {
+            "clients": "Besoin d'un développeur ou designer ?",
+            "contactText": "Contactez-moi !"
+        },
         "cards": {
             "cv": {
                 "title": "Mon CV",
@@ -116,6 +120,10 @@
         "welcome-title": "NAFLOWS, by David Mougel",
         "lang": "EN",
         "switch-lang": "Switch language",
+        "openToWork": {
+            "clients": "Looking for a developer or designer? ",
+            "contactText": "Contact me!"
+        },
         "cards": {
             "cv": {
                 "title": "My CV",

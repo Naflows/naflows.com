@@ -5,15 +5,29 @@ body {
     background-color: $global-hue-1-100;
     color: $global-hue-2-100;
     font-family: 'IBM Plex Mono', monospace;
-    padding: 50px;
+    padding: 70px 50px 50px 50px;
     height: calc(100vh - 100px);
     width: calc(100vw - 100px);
     gap: 20px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    justify-content: space-between;
+    align-items: center;
     overflow: hidden;
+    gap: 20px;
 }
+
+@keyframes TextSlideThroughScreen {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
 
 .footer__header {
     display: flex;
@@ -155,35 +169,7 @@ body {
 }
 
 
-.language-switcher {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 100%;
 
-    button {
-        padding: 10px;
-        transition: all 0.3s ease;
-        border-radius: 50px;
-        border: 1px solid $global-hue-2-100;
-        background-color: $global-hue-1-100;
-        color: $global-hue-2-100;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 16px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $global-hue-2-100-dark;
-            color: $global-hue-1-100;
-        }
-
-        &.language-switcher__button--active {
-            background-color: $global-hue-2-100;
-            color: $global-hue-1-100;
-            border-radius: 10px;
-        }
-    }
-}
 
 
 .header__content {
@@ -211,7 +197,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 100%;
+    height: calc(100% - 40px);
     justify-content: space-between;
 
 
@@ -338,6 +324,74 @@ body {
     width: 100%;
 }
 
+.app__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .open__to__work {
+        overflow: hidden;
+        width: 100%;
+        align-self: stretch;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $global-hue-2-100;
+        overflow: hidden; 
+        position:relative;
+        .slide__text {
+            color: $global-hue-1-100;
+            font-weight: 600;
+            text-transform: uppercase;
+            animation: TextSlideThroughScreen 30s linear infinite;
+            white-space: nowrap;
+            position: absolute;
+            left: 0; // Starting reference point
+
+            .slide__text--link {
+                color: $global-hue-1-100;
+                text-decoration: underline;
+                margin-left: 5px;
+
+                &:hover {
+                    color: $global-hue-1-100;
+                }
+            }
+        }
+    }
+
+    .language-switcher {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        button {
+            padding: 10px;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            border: 1px solid $global-hue-2-100;
+            background-color: $global-hue-1-100;
+            color: $global-hue-2-100;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $global-hue-2-100-dark;
+                color: $global-hue-1-100;
+            }
+
+            &.language-switcher__button--active {
+                background-color: $global-hue-2-100;
+                color: $global-hue-1-100;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
 
 
 // RESPONSIVE
@@ -348,6 +402,7 @@ body {
         width: auto;
         overflow-y: auto;
         flex-direction: column-reverse;
+
         .language-switcher {
             justify-content: center;
         }
@@ -398,6 +453,7 @@ body {
 
     .card--with-image {
         width: calc(100% - 10px);
+
         .card__content {
             flex-direction: column;
         }

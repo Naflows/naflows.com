@@ -10,7 +10,7 @@ const TranslateContext = React.createContext<{
   translate: any;
 }>({
   lang: "EN",
-  setLang: () => {},
+  setLang: () => { },
   translate: null,
 });
 
@@ -30,15 +30,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+
+
+
         <TranslateContext.Provider value={{ lang, setLang, translate }}>
           {children}
         </TranslateContext.Provider>
 
-          { /* Switch language button */}
+        <div className="app__footer">
+          <div className="open__to__work">
+            <div className="slide__text">
+              {translate ? translate["openToWork"]["clients"] : "Loading..."}
+              <a href="mailto:mougel.david@naflows.com" className="slide__text--link">
+                {translate ? translate["openToWork"]["contactText"] : "Loading..."}
+              </a>
+            </div>
+          </div>
           <div className="language-switcher">
             {[
-              {n:"EN",l:"English"},
-              {n:"FR",l:"Français"}
+              { n: "EN", l: "English" },
+              { n: "FR", l: "Français" }
             ].map((language) => (
               <button
                 key={language.n}
@@ -56,6 +67,7 @@ export default function RootLayout({
               </button>
             ))}
           </div>
+        </div>
       </body>
     </html>
   );

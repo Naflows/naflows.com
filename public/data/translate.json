@@ -9,6 +9,24 @@
                 "title": "Mon CV",
                 "description": "Consultez mon CV en ligne pour découvrir mon parcours professionnel, mes compétences techniques et mes réalisations en développement web et design UI/UX.",
                 "actionName": " Télécharger mon CV"
+            },
+            "design": {
+                "title": "Mes designs",
+                "description": "Découvrez une sélection de mes travaux de design UI/UX, mettant en avant ma créativité et mon expertise dans la création d'expériences utilisateur attrayantes et fonctionnelles.",
+                "actionName": "Voir mes designs"
+            },
+            "nass": {
+                "title": "NASS",
+                "description": "Découvrez le projet NASS, un système avancé de SSO et de gestion d'accès pour les environnements cloud et locaux.",
+                "actionName": "Voir le workflow",
+                "url": "https://github.com/Naflows/naflows-auth",
+                "image": "/assets/naflows.png"
+            },
+            "archives": {
+                "title": "Mes archives",
+                "description": "Explorez mes archives de projets passés, mettant en lumière mon parcours de développement et de design à travers une variété de réalisations.",
+                "actionName": "Voir mes archives",
+                "url": "https://archives.naflows.com"
             }
         },
         "design": [
@@ -16,25 +34,25 @@
                 "name": "NASS Workflow",
                 "url": "files/NASS_Workflow.pdf",
                 "description": "Découvrez le workflow du projet NASS, un système avancé de SSO et de gestion d'accès pour les environnements cloud et locaux.",
-                "language" : "EN",
-                "files" : [
-                    { 
-                        "name" : ""
+                "language": "EN",
+                "files": [
+                    {
+                        "name": ""
                     }
                 ]
             },
             {
                 "name": "Naflows Commercial",
                 "description": "Découvrez les designs de Naflows en tant qu'entreprise commerciale offrant des services de développement et de design UI/UX.",
-                "language" : "EN",
-                "files" : [
+                "language": "EN",
+                "files": [
                     {
-                        "name" : "Suivi de commande",
-                        "url" : "files/design/Naflows_Commercial_Order_Tracking.pdf"
+                        "name": "Suivi de commande",
+                        "url": "files/design/Naflows_Commercial_Order_Tracking.pdf"
                     },
                     {
-                        "name" : "Dashboard Admin",
-                        "url" : "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                        "name": "Dashboard Admin",
+                        "url": "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
                     },
                     {
                         "name": "Site Vitrine",
@@ -45,8 +63,8 @@
                         "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
                     },
                     {
-                        "name" : "Emails",
-                        "url" : "files/design/Naflows_Commercial_Emails.pdf"
+                        "name": "Emails",
+                        "url": "files/design/Naflows_Commercial_Emails.pdf"
                     }
                 ]
             },
@@ -54,19 +72,19 @@
                 "name": "Local Shops App",
                 "url": "files/Local_Shops_App.pdf",
                 "description": "Explorez les designs de l'application Local Shops, une plateforme visant à promouvoir les commerces locaux et à faciliter les achats de proximité.",
-                "language" : "FR",
-                "files" : [
-                    { 
-                        "name" : "Page d'accueil",
-                        "url" : "files/design/Local_Shops_App_Homepage.pdf"
+                "language": "FR",
+                "files": [
+                    {
+                        "name": "Page d'accueil",
+                        "url": "files/design/Local_Shops_App_Homepage.pdf"
                     },
                     {
-                        "name" : "Vérification du commerce",
-                        "url" : "files/design/Local_Shops_App_Business_Verification.pdf"
+                        "name": "Vérification du commerce",
+                        "url": "files/design/Local_Shops_App_Business_Verification.pdf"
                     },
                     {
-                        "name" : "Composants UI",
-                        "url" : "files/design/Local_Shops_App_UI_Components.pdf"
+                        "name": "Composants UI",
+                        "url": "files/design/Local_Shops_App_UI_Components.pdf"
                     }
                 ]
             }
@@ -103,26 +121,44 @@
                 "title": "My CV",
                 "description": "Check out my online CV to discover my professional background, technical skills, and achievements in web development and UI/UX design.",
                 "actionName": "Download my CV"
-            }
+            },
+            "design": {
+                "title": "My designs",
+                "description": "Discover a selection of my UI/UX design works, showcasing my creativity and expertise in creating engaging and functional user experiences.",
+                "actionName": "See my designs"
+            },
+            "nass": {
+                "title": "NASS",
+                "description": "Discover the NASS project, an advanced SSO and access management system for cloud and on-premises environments.",
+                "actionName": "See the workflow",
+                "url": "https://github.com/Naflows/naflows-auth",
+                "image": "/assets/naflows.png"
+            },
+            "archives": {
+                "title": "My archives",
+                "description": "Explore my archives of past projects, highlighting my development and design journey through a variety of achievements.",
+                "actionName": "See my archives",
+                "url": "https://archives.naflows.com"
+             }
         },
         "design": [
             {
                 "name": "NASS Workflow",
                 "description": "Discover the workflow of the NASS project, an advanced SSO and access management system for cloud and on-premises environments.",
-                "language" : "EN"
+                "language": "EN"
             },
             {
                 "name": "Naflows Commercial",
                 "description": "Explore the designs of Naflows as a commercial company offering development and UI/UX design services.",
-                "language" : "EN",
-                "files" : [
+                "language": "EN",
+                "files": [
                     {
-                        "name" : "Order Tracking",
-                        "url" : "files/design/Naflows_Commercial_Order_Tracking.pdf"
+                        "name": "Order Tracking",
+                        "url": "files/design/Naflows_Commercial_Order_Tracking.pdf"
                     },
                     {
-                        "name" : "Admin Dashboard",
-                        "url" : "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
+                        "name": "Admin Dashboard",
+                        "url": "files/design/Naflows_Commercial_Admin_Dashboard.pdf"
                     },
                     {
                         "name": "Landing Page",
@@ -133,27 +169,27 @@
                         "url": "files/design/Naflows_Commercial_Login_Portal.pdf"
                     },
                     {
-                        "name" : "Emails",
-                        "url" : "files/design/Naflows_Commercial_Emails.pdf"
+                        "name": "Emails",
+                        "url": "files/design/Naflows_Commercial_Emails.pdf"
                     }
                 ]
             },
             {
                 "name": "Local Shops App",
                 "description": "Explore the designs of the Local Shops app, a platform aimed at promoting local businesses and facilitating neighborhood shopping.",
-                "language" : "FR",
-                "files" : [
-                    { 
-                        "name" : "Homepage",
-                        "url" : "files/design/Local_Shops_App_Homepage.pdf"
+                "language": "FR",
+                "files": [
+                    {
+                        "name": "Homepage",
+                        "url": "files/design/Local_Shops_App_Homepage.pdf"
                     },
                     {
-                        "name" : "Business Verification",
-                        "url" : "files/design/Local_Shops_App_Business_Verification.pdf"
+                        "name": "Business Verification",
+                        "url": "files/design/Local_Shops_App_Business_Verification.pdf"
                     },
                     {
-                        "name" : "UI Components",
-                        "url" : "files/design/Local_Shops_App_UI_Components.pdf"
+                        "name": "UI Components",
+                        "url": "files/design/Local_Shops_App_UI_Components.pdf"
                     }
                 ]
             }

@@ -5,7 +5,14 @@ body {
     background-color: $global-hue-1-100;
     color: $global-hue-2-100;
     font-family: 'IBM Plex Mono', monospace;
-    padding: 20px;
+    padding: 50px;
+    height: calc(100vh - 100px);
+    width: calc(100vw - 100px);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
 }
 
 .footer__header {
@@ -13,11 +20,15 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
+    width: 100%;
+    border: 1px solid $global-hue-2-100;
+    border-style: solid none none none;
 
     .footer__content {
         display: flex;
-        flex-direction: column;
-        align-items: start;
+        flex-direction: row;
+        align-items: center;
         gap: 30px;
 
         .footer__content__header {
@@ -148,9 +159,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    width: 100%;
 
     button {
         padding: 10px;
@@ -177,6 +186,22 @@ body {
 }
 
 
+.header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    .small--cards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+    }
+}
+
 .card {
     padding: 20px;
     border-radius: 35px;
@@ -186,15 +211,46 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
+    justify-content: space-between;
+
+
+
+    &.card--with-image {
+        .card__content {
+            flex-direction: column
+        }
+
+        .card__image {
+            padding: 5px 15px;
+            background-color: $global-hue-1-100;
+            width: calc(100% - 30px);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: stretch;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+            }
+        }
+    }
+
+
 
     &.mx-250 {
         max-width: 250px;
+        min-width: 250px;
     }
 
     .card__logo {
         display: flex;
         align-items: center;
         justify-content: center;
+
         svg {
             width: 30px;
             height: 30px;
@@ -212,6 +268,7 @@ body {
             flex-direction: row;
             align-items: center;
             gap: 15px;
+
             .card__name {
                 font-size: 20px;
                 text-transform: uppercase;
@@ -220,33 +277,133 @@ body {
             }
         }
     }
-        .card__action {
-            a {
-                padding: 10px 20px;
-                border-radius: 30px;
-                background-color: $global-hue-1-100;
-                color: $global-hue-2-100;
-                text-decoration: none;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: background-color 0.3s ease, color 0.3s ease;
-                min-width: fit-content;
-                border: 1px solid $global-hue-1-100;
+
+    .card__content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card__action {
+        height: 100%;
+        width: 100%;
+
+        a {
+            padding: 10px 20px;
+            border-radius: 30px;
+            background-color: $global-hue-1-100;
+            color: $global-hue-2-100;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            height: calc(100% - 20px);
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            min-width: fit-content;
+            border: 1px solid $global-hue-1-100;
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center;
+            gap: 50px;
+
+            svg {
+                fill: $global-hue-2-100;
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover {
+                background-color: $global-hue-2-100;
+                color: $global-hue-1-100;
+
                 svg {
-                    fill: $global-hue-2-100;
-                    margin-left: 10px;
-                    width: 16px;
-                    height: 16px;
-                }
-                &:hover {
-                    background-color: $global-hue-2-100-dark;
-                    color: $global-hue-1-100;
-                    svg {
-                        fill: $global-hue-1-100;
-                    }
+                    fill: $global-hue-1-100;
                 }
             }
         }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+// RESPONSIVE
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+        width: auto;
+        overflow-y: auto;
+        flex-direction: column-reverse;
+        .language-switcher {
+            justify-content: center;
+        }
+    }
+
+    .main {
+        flex-direction: column-reverse;
+
+        .footer__header {
+            border-style: none none solid none;
+            padding-top: 0px;
+            gap: 50px;
+            padding-bottom: 20px;
+        }
+
+        .footer__content {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+        }
+    }
+
+    .footer__header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header__content {
+        flex-direction: column;
+        gap: 30px;
+
+        .small--cards {
+            flex-direction: column;
+            gap: 20px;
+            align-self: stretch;
+        }
+    }
+
+    .card__content {
+        .card__action {
+            a {
+                gap: 10px;
+            }
+        }
+    }
+
+    .card--with-image {
+        width: calc(100% - 10px);
+        .card__content {
+            flex-direction: column;
+        }
+
+        .card__image {
+            width: 100%;
+        }
+    }
 }

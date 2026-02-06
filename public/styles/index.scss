@@ -5,7 +5,7 @@ body {
     background-color: $global-hue-1-100;
     color: $global-hue-2-100;
     font-family: 'IBM Plex Mono', monospace;
-    padding: 70px 50px 50px 50px;
+    padding: 20px 50px 50px 50px;
     height: calc(100vh - 100px);
     width: calc(100vw - 100px);
     gap: 20px;
@@ -319,7 +319,6 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 50px;
     height: 100%;
     width: 100%;
@@ -389,6 +388,34 @@ body {
                 color: $global-hue-1-100;
                 border-radius: 10px;
             }
+        }
+    }
+}
+
+
+.app__footer__link {
+    // Same as language switcher button
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    border: 1px solid $global-hue-2-100;
+    background-color: $global-hue-1-100;
+    color: $global-hue-2-100;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    svg {
+        fill: $global-hue-2-100;
+        width: 24px;
+        height: 24px;
+    }
+    &:hover {
+        background-color: $global-hue-2-100;
+        color: $global-hue-1-100;
+        border-radius: 10px;
+        svg {
+            fill: $global-hue-1-100;
         }
     }
 }

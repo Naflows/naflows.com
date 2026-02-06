@@ -23,6 +23,15 @@ export default function Design() {
         <div className="design__page">
 
 
+            <div className="design__header">
+                <div className="design__header__title">
+                    <h1 className="design__header__title">{translate ? translate["design"]["title"] : "Loading..."}</h1>
+                    <p className="design__header__description">{translate ? translate["design"]["description"] : "Loading..."}</p>
+                </div>
+
+                <p className="design__header__history">{translate ? translate["design"]["history"] : "Loading..."}</p>
+            </div>
+
             <div className="design__card__content">
                 {
                     translate && translate.design.content.map((project: DesignProject, index: number) => (
@@ -68,16 +77,6 @@ export default function Design() {
                         </div>
                     ))
                 }
-            </div>
-
-
-            <div className="design__header">
-                <div className="design__header__title">
-                    <h1 className="design__header__title">{translate ? translate["design"]["title"] : "Loading..."}</h1>
-                    <p className="design__header__description">{translate ? translate["design"]["description"] : "Loading..."}</p>
-                </div>
-
-                <p className="design__header__history">{translate ? translate["design"]["history"] : "Loading..."}</p>
             </div>
         </div>
     )

@@ -10,6 +10,7 @@
         },
         "requestDemo" : "Vous pouvez demander une démo !",
         "projectLanguage" : "Ce projet est en anglais",
+        "home" : "Accueil",
         "cards": {
             "cv": {
                 "title": "Mon CV",
@@ -160,6 +161,7 @@
             "clients": "Looking for a developer or designer? ",
             "contactText": "Contact me!"
         },
+        "home" : "Home",
         "requestDemo" : "You can request a demo!",
         "projectLanguage" : "This project is in English",
         "cards": {

@@ -29,8 +29,8 @@ export default function RootLayout({
 
   useEffect(() => {
     const path = window.location.pathname;
-    if (path.includes("/design")) setCurrentPage("design");
-    else if (path.includes("/request-demo")) setCurrentPage("request-demo");
+    if (path.includes("/designs")) setCurrentPage("designs");
+    if (path.includes("/about-me")) setCurrentPage("about-me");
     else setCurrentPage("home");
   }, []);
 

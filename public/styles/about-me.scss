@@ -1,0 +1,98 @@
+@import './variables.scss';
+
+.about__me__page {
+        display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 50px;
+    .content {
+        display:flex;
+        gap: 40px;
+    }
+}
+
+body {
+    overflow-y: auto;
+    height: fit-content;
+}
+
+.values__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // Grid of three columns
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    .value {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        background-color: $global-hue-2-100;
+        border-radius: 50px;
+
+
+        .value__name {
+            font-size: 18px;
+            font-weight: bold;
+            color: $global-hue-1-100;
+            margin:0;
+        }
+
+    }
+}
+
+.ambitions {
+    width: 70%;
+}
+.values {
+    width: 100%;
+}
+
+.ambitions__list {
+    display: flex;
+    flex-direction: column;
+    // Grid of three columns
+    gap: 10px;
+    width: 100%;
+    .ambition {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background-color: $global-hue-2-100;
+        border-radius: 10px;
+        width: calc(100% - 40px);
+        .ambition__header{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .ambition__icon {
+            svg {
+                width: 40px;
+                height: 40px;
+                fill: $global-hue-1-100;
+            }
+        }
+
+        .ambition__name {
+            font-size: 18px;
+            font-weight: bold;
+            color: $global-hue-1-100;
+            margin:0;
+        }
+
+        .ambition__description {
+            font-size: 14px;
+            color: $global-hue-1-100;
+            margin:0;
+        }
+    }
+}

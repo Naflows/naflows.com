@@ -130,6 +130,53 @@
                 }
             ]
         },
+        "about-me" : {
+            "title" : "Mes ambitions et valeurs",
+            "ambitionsContent": {
+                "title" : "Trois ambitions principales"
+            },
+            "valuesContent": {
+                "title" : "Travailler avec moi signifie"
+            },
+            "ambitions" : [
+                {
+                    "name" : "Créer des solutions numériques innovantes et accessibles",
+                    "description" : "Je m'efforce de concevoir et de développer des solutions numériques qui répondent aux besoins de mes clients et utilisateurs, en mettant l'accent sur l'innovation, la convivialité, et l'accessibilité pour tous.",
+                    "icon" : "innovation"
+                },
+                {
+                    "name" : "Accompagner mes clients et collaborateurs dans leur transformation numérique",
+                    "description" : "Je m'engage à accompagner mes clients et collaborateurs dans leur transformation numérique, en partageant mes connaissances et mon expertise pour les aider à comprendre et à adopter les technologies numériques de manière efficace et stratégique.",
+                    "icon" : "support"
+                },
+                {
+                    "name" : "Améliorer constamment mes compétences et connaissances",
+                    "description" : "Je suis passionné par l'apprentissage continu et je m'efforce d'améliorer constamment mes compétences et connaissances dans les domaines du développement web, du design UI/UX, et des technologies numériques en général, afin de rester à la pointe de l'innovation et de fournir des solutions de haute qualité à mes clients.",
+                    "icon" : "improvement"
+                }
+            ],
+            "values": [
+                {
+                    "name": "Collaboration"               },
+                {
+                    "name": "Pédagogie"                },
+                {
+                    "name": "Souveraineté numérique"
+                },
+                {
+                    "name": "Perfection & Excellence"
+                },
+                {
+                    "name": "Transparence"
+                },
+                {
+                    "name": "Ponctualité"
+                },
+                {
+                    "name": "Imagination"
+                }
+             ]
+        },
         "learn-more": {
             "title": "En savoir plus",
             "links": [
@@ -278,6 +325,54 @@
                             "url": "/files/design/Local_Shops_App_UI_Components.pdf"
                         }
                     ]
+                }
+            ]
+        },
+        "about-me" : {
+            "title" : "My ambitions and values",
+
+            "ambitionsContent" : {
+                "title" : "Three main ambitions"
+            },
+            "valuesContent" : {
+                "title" : "Working with me means"
+            },
+            "ambitions" : [
+                {
+                    "name" : "Create accessible digital solutions",
+                    "description" : "I strive to design and develop digital solutions that meet the needs of my clients and users, with a focus on innovation, user-friendliness, and accessibility for all.",
+                    "icon" : "innovation"
+                },
+                {
+                    "name" : "Support my collaborators in their digital transformation",
+                    "description" : "I am committed to supporting my clients and collaborators in their digital transformation, sharing my knowledge and expertise to help them understand and adopt digital technologies effectively and strategically.",
+                    "icon" : "support"
+                },
+                {
+                    "name" : "Constantly improve my skills and knowledge",
+                    "description" : "I am passionate about continuous learning and strive to constantly improve my skills and knowledge in web development, UI/UX design, and digital technologies in general, in order to stay at the forefront of innovation and provide high-quality solutions to my clients.",
+                    "icon" : "improvement"
+                }
+            ],
+            "values" : [
+                {
+                    "name": "Collaboration"               },
+                {
+                    "name": "Pedagogy"                },
+                {
+                    "name": "Digital sovereignty"
+                },
+                {
+                    "name": "Perfection & Excellence"
+                },
+                {
+                    "name": "Transparency"
+                },
+                {
+                    "name": "Punctuality"
+                },
+                {
+                    "name": "Imagination"
                 }
             ]
         },
